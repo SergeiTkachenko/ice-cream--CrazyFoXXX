@@ -1,13 +1,8 @@
-// body {
-//   font-family: ;
-//   font-size: ;
-//   letter-spacing: ;
+body {
+  font-family: var(--main-font);
+  font-size: 16px;
+  letter-spacing: 0.04em;
 
-//   color: ;
-//   background-color: ;
-// }
-
-// .section {
-//   padding-top: ;
-//   padding-bottom: ;
-// }
+  color: var(--main-light);
+  background-color: var(--main-background);
+}
