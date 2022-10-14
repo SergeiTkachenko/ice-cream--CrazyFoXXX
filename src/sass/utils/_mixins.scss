@@ -1,0 +1,47 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin large-min {
+  @media screen and (min-width: $large-width-min) {
+    @content;
+  }
+}
+
+@mixin large-max {
+  @media screen and (max-width: $large-width-max) {
+    @content;
+  }
+}
+
+@mixin medium-min {
+  @media screen and (min-width: $medium-width-min) {
+    @content;
+  }
+}
+
+@mixin medium-max {
+  @media screen and (max-width: $medium-width-max) {
+    @content;
+  }
+}
+
+@mixin medium-only {
+  @media screen and (min-width: $medium-width-min) and (max-width: $large-width-max) {
+    @content;
+  }
+}
+
+@mixin small-min {
+  @media screen and (min-width: $small-width-min) {
+    @content;
+  }
+}
+
+@mixin small-max {
+  @media screen and (max-width: $small-width-max) {
+    @content;
+  }
+}

@@ -1,0 +1,8 @@
+.about {
+  background-color: red;
+  width: 400px;
+
+  @include medium-min {
+    min-width: 500px;
+  }
+}
