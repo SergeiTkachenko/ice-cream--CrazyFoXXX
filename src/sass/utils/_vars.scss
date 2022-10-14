@@ -1,15 +1,35 @@
 :root {
-  /* fonts */
+  // Fonts
 
-  /* text color */
+  --main-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Seymour One', sans-serif;
 
-  /* Background colors */
+  //   Colors
 
-  /* bnt */
+  --main-light: #fcfcfc;
+  --main-dark: #131313;
+  --accent-color: #f8d24e;
 
-  /* transition */
+  // Background
 
-  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --main-background: #84a178;
+
+  // Сards background
+
+  --card-green: #aec6a5;
+  --card-yellow: #efd478;
+  --card-orange: #d6936d;
+
+  //   Buttons color
+
+  --default-btn: #f8d24e;
+  --hover-btn: #0a8817;
+  --light-btn-text: #fcfcfc;
+  --dark-btn-text: #000000;
+
+  //   Hovers animation
+
+  --main-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
 $large-width-min: 1200px;
