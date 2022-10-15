@@ -1,0 +1,101 @@
+// Стили для кнопок "Buy now", "Franchise", "Our Locations", "Read more", "Products" - одинаковые для всех версий
+
+.button {
+  padding: 10px 32px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+
+  color: var(--dark-btn-text);
+  background-color: var(--default-btn);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: color var(--main-animation),
+    background-color var(--main-animation);
+
+  &:hover {
+    background-color: var(--hover-btn);
+  }
+
+  &:focus {
+    color: var(--light-btn-text);
+    background-color: var(--hover-btn);
+  }
+}
+
+// Модификатор для прозрачной кнопки
+
+.button--transparent {
+  background-color: transparent;
+  border: 2px solid var(--default-btn);
+
+  transition: border var(--main-animation);
+
+  &:hover {
+    background-color: transparent;
+    border: 2px solid var(--hover-btn);
+  }
+
+  &:focus {
+    background-color: transparent;
+    color: var(--light-btn-text);
+    border: 2px solid var(--hover-btn);
+  }
+}
+
+// Модификатор для кнопки "Products" - изменяет размер в зависимости от ширины экрана
+
+.button--products {
+  background-color: transparent;
+  border: 2px solid var(--default-btn);
+
+  transition: border var(--main-animation);
+
+  &:hover {
+    background-color: transparent;
+    border: 2px solid var(--hover-btn);
+  }
+
+  &:focus {
+    background-color: transparent;
+    color: var(--light-btn-text);
+    border: 2px solid var(--hover-btn);
+  }
+
+  @include large-max {
+    padding: 7px 11px;
+
+    font-size: 8px;
+    line-height: calc(10 / 8);
+  }
+}
+
+// Модификатор для кнопки "How it’s made?"
+
+.button--how {
+  padding: 12px 22px;
+  background-color: transparent;
+  color: var(--default-btn);
+  border: none;
+  text-decoration: underline;
+
+  transition: color var(--main-animation);
+
+  &:hover {
+    background-color: transparent;
+    color: var(--hover-btn);
+  }
+
+  &:focus {
+    background-color: transparent;
+    color: var(--light-btn-text);
+  }
+
+  @include large-max {
+    padding: 9px 10px;
+
+    font-size: 8px;
+    line-height: calc(10 / 8);
+  }
+}
