@@ -41,8 +41,13 @@
   padding: 40px 32px;
   background-color: var(--main-light);
   border-radius: 30px;
-  // margin-bottom: 20px;
+
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  @include medium-max {
+    display: block;
+    text-align: center;
+    align-items: center;
+  }
   @include medium-min {
     width: calc((100% - 32px) / 3);
     padding: 40px 24px;
@@ -53,8 +58,11 @@
   }
 }
 .contacts__category {
-  display: inline;
-  padding: 1px 22px;
+  @include flex-center;
+  padding: 0 22px;
+  height: 16px;
+  outline: none;
+  border-color: transparent;
 
   background-color: var(--accent-color);
   color: var(--main-dark);
@@ -64,7 +72,12 @@
   line-height: calc(22 / 12);
   font-weight: 500;
   text-transform: uppercase;
+  @include medium-max {
+    margin-left: auto;
+    margin-right: auto;
+  }
   @include medium-min {
+    height: 28px;
     font-size: 16px;
     line-height: calc(30 / 16);
   }
@@ -80,10 +93,13 @@
   @include medium-min {
     font-size: 14px;
     line-height: calc(26 / 14);
+    margin-top: 32px;
+    margin-bottom: 12px;
   }
   @include large-min {
     font-size: 16px;
     line-height: calc(30 / 16);
+    margin-bottom: 8px;
   }
 }
 .contacts__map-link {
@@ -94,6 +110,10 @@
   font-weight: 500;
   color: var(--card-orange);
   transition: color var(--main-animation);
+  @include medium-max {
+    margin-left: auto;
+    margin-right: auto;
+  }
   @include medium-max {
     letter-spacing: 0;
     max-width: 200px;
@@ -110,6 +130,7 @@
 .contacts__map-link:hover,
 .contacts__map-link:focus {
   color: var(--hover-btn);
+  text-decoration: underline;
 }
 .contacts__schedule {
   margin: 24px 0;
@@ -117,6 +138,14 @@
 
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
+
+  @include medium-min {
+    margin: 26px 0;
+    padding: 32px 0;
+  }
+  @include large-min {
+    margin: 32px 0;
+  }
 }
 .contacts__schedule-item {
   margin-bottom: 8px;
@@ -175,6 +204,7 @@
 .contacts__contacts-mail:hover,
 .contacts__contacts-mail:focus {
   color: var(--hover-btn);
+  text-decoration: underline;
 }
 
 .contacts__buttons {
