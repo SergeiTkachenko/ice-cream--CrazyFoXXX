@@ -22,15 +22,30 @@
     }
   }
 
-  .slick-dots li button:before {
-    color: pink;
+  .slick-dots {
+    bottom: -40px;
+
+    li {
+      button:before {
+        color: pink;
+        opacity: 0.2;
+        font-size: 12px;
+      }
+      &.slick-active button:before {
+        opacity: 1;
+      }
+    }
   }
+
+
   .slick-prev {
     left: 0;
   }
+
   .slick-next {
     right: 0;
   }
+
   .slick-arrow::before {
     display: none;
   }
@@ -57,6 +72,7 @@
 @include large-min {
   .gallery {
     height: 0;
+
     .gallery__container {
       .gallery__wrapper {
         top: -94px;
