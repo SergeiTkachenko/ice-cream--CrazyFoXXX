@@ -1,3 +1,428 @@
 .hero {
   background-color: tomato;
 }
+.hero {
+  padding-top: 55px;
+  padding-bottom: 239px;
+}
+
+// Tablet screen
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 32px;
+  }
+}
+
+.hero__container {
+  position: relative;
+}
+
+.hero--wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__title {
+  max-width: 247px;
+
+  margin-bottom: 32px;
+
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: calc(33 / 26);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+}
+
+.hero__title--accent {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: calc(33 / 34);
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+}
+
+// Distribution information
+.hero__distribution {
+}
+
+.distribution__quantity {
+  margin-bottom: 4px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: calc(34 / 28);
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #131313;
+}
+
+.distribution__type {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: calc(10 / 8);
+  text-align: right;
+
+  color: #fcfcfc;
+}
+
+.distribution__item:first-child {
+  margin-bottom: 20px;
+}
+
+// Hero grouop buttons for mobile and tablet
+.hero__group-buttons {
+  margin-bottom: 28px;
+}
+
+.hero__item {
+  display: inline;
+}
+
+.hero__item:first-child {
+  margin-right: 8px;
+}
+
+.hero__item:first-child .hero__btn {
+  display: inline-block;
+
+  padding-top: 5px;
+  padding-right: 8px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  // display: flex;
+  // align-items: center;
+  // text-align: center;
+
+  color: #131313;
+
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+}
+
+.hero__item:last-child .hero__btn {
+  // display: inline-block;
+
+  padding-top: 5px;
+  padding-right: 8px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: calc(10 / 8);
+  // display: flex;
+  // align-items: center;
+  // text-align: center;
+  text-decoration-line: underline;
+
+  border: 2px solid transparent;
+  color: #f8d24e;
+}
+
+// Hero thumb
+.hero__thumb {
+  display: flex;
+  align-items: center;
+}
+
+.thumb__img-plate {
+  margin-right: 33px;
+}
+
+.thumb__desc {
+  max-width: 151px;
+
+  margin-bottom: 20px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  /* or 17px */
+
+  color: #fcfcfc;
+}
+
+.thumb-link {
+  fill: white;
+}
+
+// Image absolute position for mobile screen
+.hero__img-icecream {
+  position: absolute;
+
+  top: 286px;
+  left: 172px;
+  transform: translate(-50%, -50%);
+}
+
+.hero__img-dots {
+  position: absolute;
+
+  top: 371px;
+  left: 159px;
+  transform: translate(-50%, -50%);
+}
+
+// Mobile screen
+@media screen and (max-width: 767px) {
+  // Start VISIBILITY screen
+  // Addition blocks for tablet and desktop
+  .hero__distribution {
+    display: none;
+  }
+
+  .hero__thumb {
+    display: none;
+  }
+  // End Addition
+}
+
+// Tablet screen
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    padding-top: 38px;
+    padding-bottom: 13px;
+  }
+
+  .hero__title {
+    max-width: 181px;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(23 / 18);
+    text-transform: uppercase;
+
+    color: #fcfcfc;
+  }
+
+  .hero__title--accent {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: calc(13 / 24);
+    text-transform: uppercase;
+
+    color: #fcfcfc;
+  }
+
+  // Image position absolute for tablet screen
+  .hero__img-icecream {
+    position: absolute;
+
+    top: 162px;
+    left: 554px;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero__img-dots {
+    position: absolute;
+
+    top: 298px;
+    left: 384px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// Desktop screen
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 44px;
+    padding-bottom: 65px;
+  }
+
+  .hero__title {
+    max-width: 367px;
+
+    margin-bottom: 28px;
+
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #fcfcfc;
+  }
+
+  .hero__title--accent {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #fcfcfc;
+  }
+
+  // Distribution information
+  .hero__distribution {
+  }
+
+  .distribution__quantity {
+    margin-bottom: 4px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 56px;
+    /* identical to box height */
+
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #131313;
+  }
+
+  .distribution__type {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: right;
+
+    color: #fcfcfc;
+  }
+
+  .distribution__item:first-child {
+    margin-bottom: 18px;
+  }
+
+  // Hero grouop buttons for desktop
+  .hero__group-buttons {
+    margin-bottom: 28px;
+  }
+
+  .hero__item {
+    display: inline;
+  }
+
+  .hero__item:first-child {
+    margin-right: 12px;
+  }
+
+  .hero__item:first-child .hero__btn {
+    display: inline-block;
+
+    padding-top: 12px;
+    padding-right: 34px;
+    padding-bottom: 12px;
+    padding-left: 34px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    color: #131313;
+
+    border: 2px solid #f8d24e;
+    border-radius: 8px;
+  }
+
+  .hero__item:last-child .hero__btn {
+    display: inline-block;
+
+    padding-top: 12px;
+    padding-right: 34px;
+    padding-bottom: 12px;
+    padding-left: 34px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+
+    color: #f8d24e;
+  }
+
+  // Hero thumb
+  .hero__thumb {
+    display: flex;
+    align-items: center;
+  }
+
+  .thumb__img-plate {
+    margin-right: 14px;
+  }
+
+  .thumb__desc {
+    max-width: 225px;
+
+    margin-bottom: 32px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+
+    color: #fcfcfc;
+  }
+
+  .thumb-link {
+    fill: white;
+  }
+
+  // Image position absolute for desktop screen
+  .hero__img-icecream {
+    position: absolute;
+
+    width: 580px;
+
+    top: 278px;
+    left: 875px;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero__img-dots {
+    position: absolute;
+
+    top: 342px;
+    left: 597px;
+    transform: translate(-50%, -50%);
+  }
+}

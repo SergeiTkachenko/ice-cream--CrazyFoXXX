@@ -1,3 +1,39 @@
-.header {
-  background-color: aquamarine;
+.header__container {
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+
+  padding-top: 12px;
+  // padding-bottom: 12px;
+}
+
+// Tablet screen
+@media screen and (max-width: 1199px) {
+  .header__container {
+    padding-bottom: 6px;
+  }
+}
+
+// Desktop screen
+@media screen and (min-width: 1200px) {
+  .header__container {
+    padding-bottom: 4px;
+  }
+}
+
+.mobile-menu__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+
+  margin-left: auto;
+
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
 }
