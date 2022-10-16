@@ -3,18 +3,67 @@
   height: 106px;
 
   .gallery__container {
+    position: relative;
 
-  }
+    .gallery__wrapper {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+      top: -30px;
 
-  .gallery__img {
-    border-radius: 7.41px;
-    height: 130px;
-    margin: 0 auto;
+    }
 
+    .gallery__img {
+      border-radius: 7.41px;
+      height: 130px;
+      margin: 0 auto;
+    }
   }
 
   .slick-dots li button:before {
     color: pink;
   }
+  .slick-arrow::before {
+    display: none;
+  }
 }
 
+
+// 768 +
+@include medium-min {
+  .gallery {
+    .gallery__container {
+      .gallery__wrapper {
+        top: -164px;
+
+        .gallery__img {
+          height: 327px;
+          border-radius: 18px;;
+
+        }
+      }
+    }
+  }
+
+}
+
+// 1200 +
+
+@include large-min {
+  .gallery {
+    .gallery__container {
+      .gallery__wrapper {
+        top: -94px;
+
+        .gallery__img {
+          height: 422px;
+          border-radius: 24px;;
+
+        }
+      }
+    }
+  }
+}
