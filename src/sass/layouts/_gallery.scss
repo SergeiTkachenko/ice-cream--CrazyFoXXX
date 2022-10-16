@@ -54,6 +54,8 @@
 // 768 +
 @include medium-min {
   .gallery {
+    height: 0;
+
     .gallery__container {
       .gallery__wrapper {
         top: -164px;
@@ -79,6 +81,7 @@
 
         .gallery__img {
           height: 422px;
+          width: 1013px;
           border-radius: 24px;
         }
       }

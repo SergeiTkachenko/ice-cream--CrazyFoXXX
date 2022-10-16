@@ -2,15 +2,33 @@
   height: 940px;
   padding-top: 80px;
   background-image:
-    url("../images/backgroung/background-img2@1x.jpg");
-  background-size:cover;
+    url("../images/backgroung/background-img3_sm@1x.jpg");
 
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/backgroung/background-img3_sm@2x.jpg');
+  }
+
+  // Tablet images
+  @media screen and (min-width: 481px) {
+    background-image: url('../images/backgroung/background-img3_md@1x.jpg');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/backgroung/background-img3_md@2x.jpg');
+    }
+  }
+
+  // Desktop images
+  @media screen and (min-width: 769px) {
+    background-image: url('../images/backgroung/background-img3_lg@1x.jpg');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/backgroung/background-img3_lg@2x.jpg');
+    }
+  }
+  background-size:cover;
   background-repeat: no-repeat;
 
 
-  .customer-reviews__container {
-
-  }
 
   .customer-reviews__img {
     margin-right: auto;
@@ -75,7 +93,7 @@
   .customer-reviews {
     .customer-reviews__container {
       width: 768px;
-      padding-top: 223px;
+      padding-top: 145px;
     }
     .customer-reviews__img {
       margin-bottom: 28px;
