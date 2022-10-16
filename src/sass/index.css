@@ -1,0 +1,259 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --secondary-font: "Seymour One", sans-serif;
+  --main-light: #fcfcfc;
+  --main-dark: #131313;
+  --accent-color: #f8d24e;
+  --main-background: #84a178;
+  --card-green: #aec6a5;
+  --card-yellow: #efd478;
+  --card-orange: #d6936d;
+  --default-btn: #f8d24e;
+  --hover-btn: #0a8817;
+  --light-btn-text: #fcfcfc;
+  --dark-btn-text: #000000;
+  --main-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: var(--main-light);
+  background-color: var(--main-background);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+.header {
+  background-color: aquamarine;
+}
+
+.hero {
+  background-color: tomato;
+}
+
+.products {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.title__products {
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 148px;
+}
+
+.title__label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 12px;
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.products__item {
+  position: relative;
+  max-width: 280px;
+  height: 428px;
+  border-radius: 24px;
+  padding: 123px 40px 40px 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.products__item--cream {
+  background: #aec6a5;
+}
+
+.products__item--coffee {
+  background: #efd478;
+}
+
+.products__item--milkshakes {
+  background: #d6936d;
+}
+
+.title__name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 40px;
+}
+
+.title__name::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 42px;
+  width: 199.34px;
+  height: 196.85px;
+  border-radius: 50%;
+}
+
+.title__name:nth-child(1)::before {
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.title__name:nth-child(2)::before {
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+
+.title__name:nth-child(3)::before {
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+
+.products__descr {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #131313;
+}
+
+.products__arrov {
+  position: absolute;
+  width: 40px;
+  height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 20px;
+}
+
+.about {
+  background-color: red;
+  width: 400px;
+}
+@media screen and (min-width: 768px) {
+  .about {
+    min-width: 500px;
+  }
+}
+
+.advantages {
+  background-color: orange;
+}
+
+.gallery {
+  background-color: purple;
+}
+
+.customer {
+  background-color: yellow;
+}
+
+.contacts {
+  background-color: blue;
+}
+
+.footer {
+  background-color: green;
+}/*# sourceMappingURL=index.css.map */

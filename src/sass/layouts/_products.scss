@@ -1,5 +1,6 @@
 .products {
-  background-color: aqua;
+  padding-top: 60px;
+  padding-bottom: 80px;
 }
 
 .title__products {
@@ -12,16 +13,92 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #131313;
+  margin-bottom: 148px;
+}
+
+.title__label {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 12px;
 }
 
 .products__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
 }
 
 .products__item {
-  height: 420px;
-  background: #aec6a5;
+  position: relative;
+  max-width: 280px;
+  height: 428px;
   border-radius: 24px;
+  padding: 123px 40px 40px 40px;
+  align-items: center;
+  justify-content: center;
 }
+
+.products__item--cream {
+  background: #aec6a5;
+}
+
+.products__item--coffee {
+  background: #efd478;
+  margin-top: 164px;
+}
+
+.products__item--milkshakes {
+  background: #d6936d;
+  margin-top: 164px;
+}
+
+// .products__circle {
+//   position: absolute;
+//   top: -100px;
+//   left: 42px;
+//   width: 199.34px;
+//   height: 196.85px;
+//   border-radius: 50%;
+// }
+
+// .products__circle--cream {
+//   background: linear-gradient(
+//       0deg,
+//       rgba(156, 190, 143, 0.7),
+//       rgba(156, 190, 143, 0.7)
+//     ),
+//     #d9d9d9;
+//   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+// }
+
+// .products__circle--coffee {
+//   background: linear-gradient(
+//       0deg,
+//       rgba(248, 210, 78, 0.7),
+//       rgba(248, 210, 78, 0.7)
+//     ),
+//     #d9d9d9;
+//   box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+// }
+
+// .products__circle--milkshakes {
+//   background: linear-gradient(
+//       0deg,
+//       rgba(213, 117, 63, 0.7),
+//       rgba(213, 117, 63, 0.7)
+//     ),
+//     #d9d9d9;
+//   box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+// }
 
 .title__name {
   font-family: 'Montserrat';
@@ -33,7 +110,49 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #131313;
+  margin-bottom: 40px;
 }
+
+.title__name::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: 42px;
+  width: 199.34px;
+  height: 196.85px;
+  border-radius: 50%;
+}
+
+.title__name:nth-child(1)::before {
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.title__name:nth-child(2)::before {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+
+.title__name:nth-child(3)::before {
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+
 .products__descr {
   font-family: 'Montserrat';
   font-style: normal;
@@ -43,4 +162,13 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: #131313;
+}
+
+.products__arrov {
+  position: absolute;
+  width: 40px;
+  height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 20px;
 }
