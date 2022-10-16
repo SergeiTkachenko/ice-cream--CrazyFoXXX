@@ -6,10 +6,10 @@
   background-color: #84a178;
   height: 1148px;
   @include medium-min {
-    height: 312px;
+    height: 375px;
   }
   @include large-min {
-    height: 611px;
+    height: 685px;
   }
 }
 .contacts__container {
@@ -28,12 +28,13 @@
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 32px;
-
   @include medium-min {
     gap: 16px;
+    margin-bottom: 60px;
   }
   @include large-min {
     gap: 32px;
+    margin-bottom: 64px;
   }
 }
 .contacts__item {
@@ -103,13 +104,14 @@
   }
 }
 .contacts__map-link {
-  display: block;
   margin: 0;
   font-size: 12px;
   line-height: calc(22 / 12);
+
   font-weight: 500;
   color: var(--card-orange);
-  transition: color var(--main-animation);
+  transition: color var(--main-animation), border-bottom var(--main-animation);
+
   @include medium-max {
     margin-left: auto;
     margin-right: auto;
@@ -127,10 +129,11 @@
     line-height: calc(30 / 16);
   }
 }
+
 .contacts__map-link:hover,
 .contacts__map-link:focus {
   color: var(--hover-btn);
-  text-decoration: underline;
+  border-bottom: 1px solid currentColor;
 }
 .contacts__schedule {
   margin: 24px 0;
@@ -188,7 +191,7 @@
   line-height: calc(18 / 12);
   font-weight: 500;
 
-  transition: color var(--main-animation);
+  transition: color var(--main-animation), border-bottom var(--main-animation);
 
   @include medium-min {
     font-size: 14px;
@@ -204,7 +207,7 @@
 .contacts__contacts-mail:hover,
 .contacts__contacts-mail:focus {
   color: var(--hover-btn);
-  text-decoration: underline;
+  border-bottom: 1px solid currentColor;
 }
 
 .contacts__buttons {
