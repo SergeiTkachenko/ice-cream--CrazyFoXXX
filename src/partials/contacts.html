@@ -1,3 +1,4 @@
+<div class="contacts__test"></div>
 <section class="contacts">
   <div class="contacts__container container">
     <h2 class="contacts__header visually-hidden">Contacts</h2>
@@ -6,6 +7,7 @@
         <p class="contacts__category">cafe</p>
         <p class="contacts__city">Chicago</p>
         <a
+          title="google maps"
           target="_blank"
           rel="noreferrer noopener"
           href="https://goo.gl/maps/bvEZN6SxcV1T5NbP6"
@@ -40,6 +42,7 @@
         <p class="contacts__category">foodtruck</p>
         <p class="contacts__city">Los Angeles</p>
         <a
+          title="google maps"
           target="_blank"
           rel="noreferrer noopener"
           href="https://goo.gl/maps/Jc159u5JPE3S5Pxt6"
@@ -73,6 +76,7 @@
         <p class="contacts__category">cafe</p>
         <p class="contacts__city">New York</p>
         <a
+          title="google maps"
           target="_blank"
           rel="noreferrer noopener"
           href="https://goo.gl/maps/UFWUxuF6SjG6Hugv8"
@@ -103,7 +107,19 @@
         </ul>
       </li>
     </ul>
-    <button>Our Locations</button>
-    <button>Franchise</button>
+    <div class="contacts__buttons">
+      <button type="button" class="button">
+        Our Locations
+        <svg class="button__svg" width="5" height="8">
+          <use href="./images/sprites.svg#icon-pointer"></use>
+        </svg>
+      </button>
+      <button type="button" class="button button--transparent">
+        Franchise
+        <svg class="button__svg" width="5" height="8">
+          <use href="./images/sprites.svg#icon-pointer"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </section>
