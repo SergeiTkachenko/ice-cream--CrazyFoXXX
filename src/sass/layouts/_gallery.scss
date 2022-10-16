@@ -1,3 +1,20 @@
 .gallery {
-  background-color: purple;
+  background-color: var(--main-light);
+  height: 106px;
+
+  .gallery__container {
+
+  }
+
+  .gallery__img {
+    border-radius: 7.41px;
+    height: 130px;
+    margin: 0 auto;
+
+  }
+
+  .slick-dots li button:before {
+    color: pink;
+  }
 }
+
