@@ -1,3 +1,5 @@
+// Стилизация модалки локации
+
 .contacts-modal {
   position: absolute;
   top: 50%;
@@ -68,15 +70,32 @@
     }
   }
 
-  &__map {
+  &__wrapper {
+    position: relative;
     display: block;
     margin-bottom: 24px;
     width: 100%;
     height: 199px;
     border-radius: 10px;
 
+    overflow: hidden;
+
     @include medium-min {
       height: 260px;
+    }
+  }
+
+  &__map {
+    position: absolute;
+    top: -74;
+    left: 0;
+
+    width: 100%;
+    height: 380px;
+
+    @include medium-min {
+      top: -133;
+      height: 510px;
     }
   }
 
@@ -97,15 +116,168 @@
     border: 2px solid transparent;
     border-radius: 10px;
     transition: color var(--main-animation),
-      background-color var(--main-animation);
+      background-color var(--main-animation), transform var(--main-animation),
+      box-shadow var(--main-animation);
 
     &:hover {
       background-color: var(--hover-btn);
+      transform: translateY(-2px);
+      box-shadow: 0px 6px 6px rgba(29, 72, 190, 0.15);
     }
 
     &:focus {
       color: var(--light-btn-text);
       background-color: var(--hover-btn);
+      transform: translateY(-2px);
+      box-shadow: 0px 6px 6px rgba(29, 72, 190, 0.15);
     }
+  }
+}
+
+// Стилизация модалки франшизы
+
+.franchise-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 28px;
+  transform: translate(-50%, -50%);
+
+  width: 280px;
+
+  background-color: var(--main-light);
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+
+  @include medium-min {
+    width: 568px;
+    padding: 32px 60px;
+  }
+
+  &__title {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    font-family: 'Seymour One';
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    text-align: center;
+    color: var(--main-dark);
+    letter-spacing: 0em;
+
+    @include medium-min {
+      margin-bottom: 24px;
+      width: 322px;
+      font-size: 20px;
+      line-height: calc(28 / 20);
+    }
+  }
+
+  &__text {
+    margin-bottom: 24px;
+
+    font-size: 14px;
+    line-height: calc(20 / 14);
+    color: var(--main-dark);
+    letter-spacing: 0em;
+
+    @include medium-min {
+      margin-bottom: 32px;
+      width: 448px;
+
+      font-size: 16px;
+      line-height: calc(22 / 16);
+    }
+  }
+}
+
+.franchise-form {
+  &__input {
+    display: flex;
+    margin: 0 auto;
+    padding: 7px 12px;
+    margin-bottom: 12px;
+
+    width: 100%;
+
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84a178;
+    border-radius: 10px;
+
+    transition: border-color var(--main-animation);
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      outline: none;
+      border-color: var(--accent-color);
+    }
+
+    @include medium-min {
+      padding: 11px 16px;
+      margin-bottom: 16px;
+
+      width: 368px;
+    }
+
+    &::placeholder {
+      font-size: 12px;
+      line-height: calc(17 / 12);
+      color: var(--main-dark);
+
+      @include medium-min {
+        font-size: 14px;
+        line-height: calc(20 / 14);
+      }
+    }
+  }
+
+  &__textarea {
+    display: flex;
+    margin: 0 auto;
+    padding: 7px 12px;
+    margin-bottom: 24px;
+
+    width: 100%;
+    height: 64px;
+    resize: none;
+
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84a178;
+    border-radius: 10px;
+
+    transition: border-color var(--main-animation);
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      outline: none;
+      border-color: var(--accent-color);
+    }
+
+    @include medium-min {
+      padding: 11px 16px;
+      margin-bottom: 32px;
+
+      width: 368px;
+      height: 84px;
+    }
+
+    &::placeholder {
+      font-size: 12px;
+      line-height: calc(17 / 12);
+      color: var(--main-dark);
+
+      @include medium-min {
+        font-size: 14px;
+        line-height: calc(20 / 14);
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    margin: 0 auto;
   }
 }
