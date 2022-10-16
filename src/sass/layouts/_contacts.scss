@@ -1,12 +1,56 @@
+.contacts__test {
+  height: 600px;
+  background-color: #ababab;
+}
 .contacts {
   background-color: #84a178;
+  height: 1148px;
+  @include medium-min {
+    height: 312px;
+  }
+  @include large-min {
+    height: 611px;
+  }
+}
+.contacts__container {
+  position: relative;
+  top: -345px;
+  @include medium-min {
+    top: -304px;
+  }
+  @include large-min {
+    top: -96px;
+  }
+}
+
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 32px;
+
+  @include medium-min {
+    gap: 16px;
+  }
+  @include large-min {
+    gap: 32px;
+  }
 }
 .contacts__item {
+  width: 100%;
   padding: 40px 32px;
   background-color: var(--main-light);
   border-radius: 30px;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  @include medium-min {
+    width: calc((100% - 32px) / 3);
+    padding: 40px 24px;
+  }
+  @include large-min {
+    width: calc((100% - 64px) / 3);
+    padding: 40px 40px;
+  }
 }
 .contacts__category {
   display: inline;
@@ -20,6 +64,10 @@
   line-height: calc(22 / 12);
   font-weight: 500;
   text-transform: uppercase;
+  @include medium-min {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
 }
 .contacts__city {
   margin-top: 20px;
@@ -29,12 +77,39 @@
   line-height: calc(22 / 12);
   font-weight: 500;
   color: var(--main-dark);
+  @include medium-min {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+  @include large-min {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
 }
 .contacts__map-link {
+  display: block;
+  margin: 0;
   font-size: 12px;
   line-height: calc(22 / 12);
   font-weight: 500;
   color: var(--card-orange);
+  transition: color var(--main-animation);
+  @include medium-max {
+    letter-spacing: 0;
+    max-width: 200px;
+  }
+  @include medium-min {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+  @include large-min {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+}
+.contacts__map-link:hover,
+.contacts__map-link:focus {
+  color: var(--hover-btn);
 }
 .contacts__schedule {
   margin: 24px 0;
@@ -51,12 +126,28 @@
   font-size: 12px;
   line-height: calc(22 / 12);
   font-weight: 500;
+  @include medium-min {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+  @include large-min {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
 }
 .contacts__schedule-time {
   color: #ababab;
   font-size: 12px;
   line-height: calc(22 / 12);
   font-weight: 500;
+  @include medium-min {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+  @include large-min {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
 }
 .contacts__contacts {
   color: var(--main-dark);
@@ -67,4 +158,32 @@
   font-size: 12px;
   line-height: calc(18 / 12);
   font-weight: 500;
+
+  transition: color var(--main-animation);
+
+  @include medium-min {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+  @include large-min {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+}
+.contacts__contacts-phone:hover,
+.contacts__contacts-phone:focus,
+.contacts__contacts-mail:hover,
+.contacts__contacts-mail:focus {
+  color: var(--hover-btn);
+}
+
+.contacts__buttons {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+  @include medium-min {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
