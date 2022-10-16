@@ -16,6 +16,58 @@
     padding: 30px 58px;
   }
 
+  &__btn-close {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 16px;
+    height: 16px;
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    @include medium-min {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__btn-icon {
+    fill: var(--main-dark);
+    width: 9px;
+    height: 9px;
+
+    @include medium-min {
+      width: 11px;
+      height: 11px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-family: 'Seymour One';
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    text-align: center;
+    color: var(--main-dark);
+
+    @include medium-min {
+      margin-bottom: 32px;
+      font-size: 20px;
+      line-height: calc(28 / 20);
+    }
+  }
+
   &__wrapper {
     position: relative;
     display: block;
