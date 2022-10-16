@@ -1,6 +1,8 @@
 // Стили для кнопок "Buy now", "Franchise", "Our Locations", "Read more", "Products" - одинаковые для всех версий
 
 .button {
+  @include flex-center;
+  gap: 7px;
   padding: 10px 32px;
 
   font-weight: 600;
