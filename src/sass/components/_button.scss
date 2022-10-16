@@ -12,15 +12,20 @@
   border: 2px solid transparent;
   border-radius: 10px;
   transition: color var(--main-animation),
-    background-color var(--main-animation);
+    background-color var(--main-animation), transform var(--main-animation),
+    box-shadow var(--main-animation);
 
   &:hover {
     background-color: var(--hover-btn);
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 6px rgba(29, 72, 190, 0.15);
   }
 
   &:focus {
     color: var(--light-btn-text);
     background-color: var(--hover-btn);
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 6px rgba(29, 72, 190, 0.15);
   }
 }
 
@@ -30,17 +35,23 @@
   background-color: transparent;
   border: 2px solid var(--default-btn);
 
-  transition: border var(--main-animation);
+  transition: border var(--main-animation), color var(--main-animation),
+    transform var(--main-animation), box-shadow var(--main-animation);
 
   &:hover {
     background-color: transparent;
     border: 2px solid var(--hover-btn);
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 6px rgba(29, 72, 190, 0.15);
   }
 
   &:focus {
+    outline: none;
     background-color: transparent;
     color: var(--light-btn-text);
     border: 2px solid var(--hover-btn);
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 6px rgba(29, 72, 190, 0.15);
   }
 }
 
@@ -50,17 +61,23 @@
   background-color: transparent;
   border: 2px solid var(--default-btn);
 
-  transition: border var(--main-animation);
+  transition: border var(--main-animation), color var(--main-animation),
+    transform var(--main-animation), box-shadow var(--main-animation);
 
   &:hover {
     background-color: transparent;
     border: 2px solid var(--hover-btn);
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 6px rgba(29, 72, 190, 0.15);
   }
 
   &:focus {
+    outline: none;
     background-color: transparent;
     color: var(--light-btn-text);
     border: 2px solid var(--hover-btn);
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 6px rgba(29, 72, 190, 0.15);
   }
 
   @include large-max {

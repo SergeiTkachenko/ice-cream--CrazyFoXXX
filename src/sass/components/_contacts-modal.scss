@@ -99,15 +99,20 @@
     border: 2px solid transparent;
     border-radius: 10px;
     transition: color var(--main-animation),
-      background-color var(--main-animation);
+      background-color var(--main-animation), transform var(--main-animation),
+      box-shadow var(--main-animation);
 
     &:hover {
       background-color: var(--hover-btn);
+      transform: translateY(-2px);
+      box-shadow: 0px 6px 6px rgba(29, 72, 190, 0.15);
     }
 
     &:focus {
       color: var(--light-btn-text);
       background-color: var(--hover-btn);
+      transform: translateY(-2px);
+      box-shadow: 0px 6px 6px rgba(29, 72, 190, 0.15);
     }
   }
 }
@@ -145,7 +150,7 @@
     letter-spacing: 0em;
 
     @include medium-min {
-      margin-bottom: 32px;
+      margin-bottom: 24px;
       width: 322px;
       font-size: 20px;
       line-height: calc(28 / 20);
@@ -183,6 +188,15 @@
     border: 1px solid #84a178;
     border-radius: 10px;
 
+    transition: border-color var(--main-animation);
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      outline: none;
+      border-color: var(--accent-color);
+    }
+
     @include medium-min {
       padding: 11px 16px;
       margin-bottom: 16px;
@@ -215,6 +229,15 @@
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid #84a178;
     border-radius: 10px;
+
+    transition: border-color var(--main-animation);
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      outline: none;
+      border-color: var(--accent-color);
+    }
 
     @include medium-min {
       padding: 11px 16px;
