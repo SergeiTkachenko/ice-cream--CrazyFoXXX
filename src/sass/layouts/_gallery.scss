@@ -25,6 +25,12 @@
   .slick-dots li button:before {
     color: pink;
   }
+  .slick-prev {
+    left: 0;
+  }
+  .slick-next {
+    right: 0;
+  }
   .slick-arrow::before {
     display: none;
   }
