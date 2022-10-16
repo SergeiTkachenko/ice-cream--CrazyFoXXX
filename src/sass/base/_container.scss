@@ -3,7 +3,7 @@
   margin-right: auto;
 
   @include small-min {
-    max-width: 480px;
+    max-width: 320px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -19,4 +19,7 @@
     padding-left: 16px;
     padding-right: 16px;
   }
+
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
