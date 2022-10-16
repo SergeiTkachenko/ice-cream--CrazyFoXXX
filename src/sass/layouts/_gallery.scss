@@ -56,6 +56,7 @@
 
 @include large-min {
   .gallery {
+    height: 0;
     .gallery__container {
       .gallery__wrapper {
         top: -94px;
