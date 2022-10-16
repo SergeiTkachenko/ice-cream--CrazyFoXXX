@@ -1,7 +1,7 @@
 .header__container {
   display: flex;
   align-items: center;
-  // justify-content: space-between;
+  justify-content: space-between;
 
   padding-top: 12px;
   // padding-bottom: 12px;
@@ -21,6 +21,20 @@
   }
 }
 
+.header__button.button {
+  display: none;
+
+  @media screen and(min-width:768px) {
+    display: block;
+  }
+}
+
+.header__logo {
+  @media screen and(max-width:1199px) {
+    margin-right: auto;
+  }
+}
+
 .mobile-menu__btn {
   display: flex;
   align-items: center;
@@ -28,12 +42,52 @@
 
   width: 32px;
   height: 32px;
-
   margin-left: auto;
-
   padding: 0;
+
   background-color: transparent;
   border: none;
-
   cursor: pointer;
+
+  @media screen and(min-width:768px) {
+    margin-right: 30px;
+  }
+
+  @media screen and(min-width:1200px) {
+    display: none;
+  }
+}
+
+// Навигация сторінки
+
+.site-nav {
+  display: none;
+
+  @media screen and(min-width:1200px) {
+    display: block;
+  }
+}
+
+.site-nav__list {
+  display: flex;
+  gap: 27px;
+}
+
+.site-nav__link {
+  display: block;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  transition: color var(--main-animation);
+
+  text-decoration: none;
+  color: #FCFCFC;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
