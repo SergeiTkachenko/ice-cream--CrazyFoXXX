@@ -24,6 +24,7 @@
   }
 
   &:focus {
+    outline: none;
     color: var(--light-btn-text);
     background-color: var(--hover-btn);
     transform: translateY(-2px);
