@@ -85,6 +85,7 @@
 }
 
 .products-modal__block {
+  position: relative;
   width: 53px;
   height: 72px;
   border: 2px solid #9cbe8f;
@@ -103,6 +104,9 @@
   border-radius: 50%;
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
   align-items: center;
+  position: absolute;
+  top: -2;
+  left: 3;
 }
 
 .products-modal__value {
