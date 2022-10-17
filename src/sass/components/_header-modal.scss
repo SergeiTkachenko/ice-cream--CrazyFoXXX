@@ -49,16 +49,12 @@
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: var(--main-dark);
   }
 
   @media screen and(min-width:768px) {
     font-size: 48px;
   }
-}
-
-.menu-nav__link--active {
-  color: var(--main-dark);
 }
 
 .menu-toggle {
