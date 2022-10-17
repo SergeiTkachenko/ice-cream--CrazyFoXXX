@@ -122,7 +122,6 @@
   background-color: transparent;
   border: none;
   box-shadow: none;
-  // color: var(--light-btn-text);
 }
 
 // Hero thumb
@@ -170,11 +169,10 @@
 .hero__img-dots {
   position: absolute;
 
-  // width: 480px;
+  z-index: -1;
 
   bottom: 0;
   left: 0;
-  // transform: translate(-50%, -50%);
 }
 
 // Mobile screen
@@ -303,6 +301,19 @@
 
     font-size: 14px;
     line-height: calc(18 / 14);
+  }
+
+  .hero__group-buttons .button--non-border:hover {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: var(--hover-btn);
+  }
+
+  .hero__group-buttons .button--non-border:focus {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
   }
 
   // Hero thumb
