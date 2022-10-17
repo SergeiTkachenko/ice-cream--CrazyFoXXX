@@ -5,11 +5,11 @@
       <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M6 16h20"></path>
       <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M6 22h20"></path>
     </symbol>
-  
-  <symbol id="icon-pointer" viewBox="0 0 32 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.3333" d="M10.667 5.333l13.2 10.667-13.2 10.667"></path>
-</symbol>
 
+    <symbol id="icon-pointer" viewBox="0 0 24 24">
+      <path d="M9.707 18.707l6-6c0.391-0.391 0.391-1.024 0-1.414l-6-6c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0z"></path>
+    </symbol>
+  
     <symbol id="icon-arrov-1" viewBox="0 0 84 32">
       <path d="M81.949 17.191a2 2 0 0 0 0-2.828L69.221 1.635a2 2 0 0 0-2.829 2.828l11.314 11.314-11.314 11.314a2 2 0 0 0 2.829 2.829l12.728-12.728zm-81.884.586h80.469v-4H.065v4z"/>
     </symbol>
