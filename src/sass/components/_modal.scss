@@ -10,7 +10,8 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
-  transition: opacity var(--main-animation);
+  transition: transform var(--main-animation), visibility var(--main-animation),
+    opacity var(--main-animation);
 }
 
 /* Стили для модальных окон */
@@ -25,7 +26,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -200%);
-  transition: transform var(--main-animation);
+  transition: transform var(--main-animation), visibility var(--main-animation),
+    opacity var(--main-animation);
+
   z-index: 30; /* Должен быть выше чем у подложки*/
 }
 
