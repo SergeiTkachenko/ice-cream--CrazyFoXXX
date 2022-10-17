@@ -5,15 +5,12 @@
   position: fixed;
   top: 0;
   left: 0;
-  padding-left: 22px;
-  padding-right: 22px;
-  padding-top: 12px;
   padding-bottom: 60px;
 
   background-color: var(--main-background);
   width: 100%;
   height: 100%;
-
+  z-index: 5;
   transform: translateX(100%);
   transition: transform var(--main-animation);
 
@@ -27,9 +24,26 @@
 }
 
 .menu-nav {
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: auto;
   text-align: center;
+
+  @include medium-min {
+    margin-top: 140px;
+  }
+
+  @media screen and(max-height: 520px) {
+    margin-bottom: 50px;
+  }
+}
+
+.menu__logo {
+  top: 12px;
+  left: 32px;
+
+  @include medium-min {
+    top: 20px;
+  }
 }
 
 .menu-nav__list {
@@ -52,7 +66,7 @@
     color: var(--main-dark);
   }
 
-  @media screen and(min-width:768px) {
+  @include medium-min {
     font-size: 48px;
   }
 }
@@ -60,8 +74,8 @@
 .menu-toggle {
   fill: var(--main-light);
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 16px;
+  right: 20px;
   transition: fill var(--main-animation);
   padding: 0;
   border: none;
@@ -72,13 +86,19 @@
   &:focus {
     fill: var(--accent-color);
   }
+
+  @include medium-min {
+    top: 32px;
+    right: 32px;
+  }
 }
 
 .menu__button {
   margin-left: auto;
   margin-right: auto;
+  padding: 12px 34px;
 
-  @media screen and(min-width:768px) {
+  @include medium-min {
     display: none;
   }
 }
