@@ -1,0 +1,62 @@
+<div class="buy-now__backdrop-modal modal">
+  <button class="buy-now__btn-close js-modal-close" type="button">
+    <svg class="buy-now__btn-icon" width="9" height="9">
+      <use href="./images/sprites.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <strong class="buy-now__title">Buy now</strong>
+  <ul class="buy-now__list">
+    <li class="buy-now__item">
+      <img class="buy-now__img" src="./images/modal/modal-img1@1x.png" alt="" />
+      <div class="card">
+        <p class="buy-now__text">ice cream</p>
+      </div>
+    </li>
+    <li class="buy-now__item">
+      <img class="buy-now__img" src="./images/modal/modal-img3@1x.png" alt="" />
+      <div class="card">
+        <p class="buy-now__text">ice coffee</p>
+      </div>
+    </li>
+    <li class="buy-now__item">
+      <img class="buy-now__img" src="./images/modal/modal-img2@1x.png" alt="" />
+      <div class="card">
+        <p class="buy-now__text">milkshake</p>
+      </div>
+    </li>
+  </ul>
+
+  <form class="buy-now__form">
+    <label class="buy-now__label">
+      <input
+        class="buy-now__input"
+        type="text"
+        name="user-name"
+        placeholder="Name"
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        title="Username must be two words separated by space."
+        required
+      />
+    </label>
+    <label class="buy-now__label">
+      <input
+        class="buy-now__input"
+        type="text"
+        name="user-phone"
+        placeholder="Phone"
+        pattern="\+?[0-9\s\-\(\)]+"
+        title="+country code 999 99 99"
+        required
+      />
+    </label>
+    <label class="buy-now__label">
+      <textarea
+        class="buy-now__textarea"
+        name="user-comment"
+        placeholder="Comment"
+      ></textarea>
+    </label>
+    <button class="button buy-now__button" type="submit">Submit</button>
+  </form>
+</div>
