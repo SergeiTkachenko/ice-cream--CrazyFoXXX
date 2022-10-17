@@ -1,8 +1,5 @@
 .hero {
-  // position: relative;
-
   padding-top: 55px;
-  // padding-bottom: 239px;
 }
 
 .hero__padding {
@@ -53,8 +50,6 @@
 }
 
 // Distribution information
-.hero__distribution {
-}
 
 .distribution__quantity {
   margin-bottom: 4px;
@@ -88,54 +83,46 @@
 
 // Hero grouop buttons for mobile and tablet
 .hero__group-buttons {
-  margin-bottom: 28px;
+  display: flex;
+  gap: 8px;
+  // margin-bottom: 28px;
 }
 
-.hero__item {
-  display: inline;
-}
+.hero__group-buttons .button--transparent {
+  width: 62px;
+  height: 24px;
 
-.hero__item:first-child {
-  margin-right: 8px;
-}
-
-.hero__item:first-child .hero__btn {
-  display: inline-block;
-
-  padding-top: 5px;
-  padding-right: 8px;
-  padding-bottom: 5px;
-  padding-left: 8px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 8px;
-  line-height: 10px;
-
-  color: #131313;
-
-  border: 2px solid #f8d24e;
-  border-radius: 8px;
-}
-
-.hero__item:last-child .hero__btn {
-  // display: inline-block;
-
-  padding-top: 5px;
-  padding-right: 8px;
-  padding-bottom: 5px;
-  padding-left: 8px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
+  padding: 0;
   font-weight: 600;
   font-size: 8px;
   line-height: calc(10 / 8);
-  text-decoration-line: underline;
+}
 
-  border: 2px solid transparent;
-  color: #f8d24e;
+.hero__group-buttons .button--non-border {
+  width: 82px;
+  height: 24px;
+
+  padding: 0;
+  font-size: 8px;
+  text-decoration-line: underline;
+  border: none;
+
+  background-color: transparent;
+  color: var(--default-btn);
+}
+
+.hero__group-buttons .button--non-border:hover {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: var(--hover-btn);
+}
+
+.hero__group-buttons .button--non-border:focus {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  // color: var(--light-btn-text);
 }
 
 // Hero thumb
@@ -146,7 +133,7 @@
 
 .thumb__img-plate {
   position: relative;
-  z-index: 100;
+  z-index: 1;
   margin-right: 33px;
 }
 
@@ -155,13 +142,8 @@
 
   margin-bottom: 20px;
 
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
-  line-height: calc (17 / 12);
-
-  color: #fcfcfc;
+  line-height: calc(17 / 12);
 }
 
 .thumb-link {
@@ -172,7 +154,7 @@
 .hero__img-icecream {
   position: absolute;
 
-  z-index: 100;
+  z-index: 1;
 
   left: 0;
   bottom: 0;
@@ -212,9 +194,7 @@
   }
 
   // img
-  .hero__img-icecream {
-    // width: 480px;
-  }
+
   .hero__img-dots {
     width: 480px;
   }
@@ -224,7 +204,6 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     padding-top: 38px;
-    // padding-bottom: 13px;
   }
 
   .hero__title {
@@ -233,25 +212,19 @@
     margin-top: 10px;
     margin-bottom: 20px;
 
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px;
     line-height: calc(23 / 18);
     text-transform: uppercase;
-
-    color: #fcfcfc;
   }
 
   .hero__title--accent {
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
     font-size: 24px;
     line-height: calc(13 / 24);
     text-transform: uppercase;
+  }
 
-    color: #fcfcfc;
+  .hero__group-buttons {
+    margin-bottom: 28px;
   }
 
   .hero__padding {
@@ -264,7 +237,6 @@
 
     bottom: 0;
     left: 416px;
-    // transform: translate(-50%, -50%);
   }
 
   .hero__img-dots {
@@ -272,7 +244,6 @@
 
     bottom: 0;
     left: 0;
-    // transform: translate(-50%, -50%);
   }
 }
 
@@ -280,7 +251,6 @@
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 44px;
-    // padding-bottom: 65px;
   }
 
   .hero__title {
@@ -288,57 +258,25 @@
 
     margin-bottom: 28px;
 
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
     font-size: 38px;
     line-height: calc(48 / 38);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-
-    color: #fcfcfc;
   }
 
   .hero__title--accent {
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
     font-size: 38px;
     line-height: calc(48 / 38);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-
-    color: #fcfcfc;
   }
 
   // Distribution information
-  .hero__distribution {
-  }
-
   .distribution__quantity {
-    margin-bottom: 4px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 900;
     font-size: 46px;
     line-height: calc(56 / 46);
-    text-align: right;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-
-    color: #131313;
   }
 
   .distribution__type {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: calc(17 / 14);
     text-align: right;
-
-    color: #fcfcfc;
   }
 
   .distribution__item:first-child {
@@ -348,53 +286,23 @@
   // Hero grouop buttons for desktop
   .hero__group-buttons {
     margin-bottom: 28px;
+    gap: 12px;
   }
 
-  .hero__item {
-    display: inline;
-  }
+  .hero__group-buttons .button--transparent {
+    width: 134px;
+    height: 42px;
 
-  .hero__item:first-child {
-    margin-right: 12px;
-  }
-
-  .hero__item:first-child .hero__btn {
-    display: inline-block;
-
-    padding-top: 12px;
-    padding-right: 34px;
-    padding-bottom: 12px;
-    padding-left: 34px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
     font-size: 14px;
-    line-height: 18px;
-    /* identical to box height, or 129% */
-
-    color: #131313;
-
-    border: 2px solid #f8d24e;
-    border-radius: 8px;
+    line-height: calc(17 / 14);
   }
 
-  .hero__item:last-child .hero__btn {
-    display: inline-block;
+  .hero__group-buttons .button--non-border {
+    width: 154px;
+    height: 40px;
 
-    padding-top: 12px;
-    padding-right: 34px;
-    padding-bottom: 12px;
-    padding-left: 34px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
     font-size: 14px;
-    line-height: 17px;
-    text-decoration-line: underline;
-
-    color: #f8d24e;
+    line-height: calc(18 / 14);
   }
 
   // Hero thumb
@@ -412,14 +320,8 @@
 
     margin-bottom: 32px;
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 140%;
-    /* or 20px */
-
-    color: #fcfcfc;
+    line-height: calc(20 / 14);
   }
 
   .thumb-link {
