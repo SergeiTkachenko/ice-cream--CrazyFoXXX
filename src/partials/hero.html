@@ -17,7 +17,7 @@
     </div>
     <div class="hero__group-buttons">
       <a class="button button--transparent" href="">Products</a>
-      <a class="button button--non-border" href="">How it’s made?</a>
+      <a class="button button--how" href="">How it’s made?</a>
     </div>
 
     <div class="hero__thumb">
@@ -44,33 +44,33 @@
 
     <!-- Block for position absolute img -->
     <div class="hero__padding">
+      <picture>
+        <!-- Desktop screen -->
+        <source media="(min-width:1200px)"
+          srcset="./images/hero/hero-img1_lg@1x.png 1x, ./images/hero/hero-img1_lg@2x.png 2x" type="image/png">
+        <!-- Tablet screen -->
+        <source media="(min-width:768px)"
+          srcset="./images/hero/hero-img1_md@1x.png 1x, ./images/hero/hero-img1_md@2x.png 2x" type="image/png">
+        <!-- Mobile screen -->
+        <source media="(max-width:767px)"
+          srcset="./images/hero/hero-img1_sm@1x.png 1x, ./images/hero/hero-img1_sm@2x.png 2x" type="image/png">
+        <img class="hero__img-icecream img" src="./images/hero/hero-img1_sm@1x.png" alt="ice Cream" loading="lazy">
+      </picture>
+
+      <picture>
+        <!-- Desktop screen -->
+        <source media="(min-width:1200px)"
+          srcset="./images/hero/hero-img2_lg@1x.png 1x, ./images/hero/hero-img2_lg@2x.png 2x" type="image/png">
+        <!-- Tablet screen -->
+        <source media="(min-width:768px)"
+          srcset="./images/hero/hero-img2_md@1x.png 1x, ./images/hero/hero-img2_md@2x.png 2x" type="image/png">
+        <!-- Mobile screen -->
+        <source media="(max-width:767px)"
+          srcset="./images/hero/hero-img2_sm@1x.png 1x, ./images/hero/hero-img2_sm@2x.png 2x" type="image/png">
+        <img class="hero__img-dots img" src="./images/hero/hero-img2_sm@1x.png" alt="dots" loading="lazy">
+      </picture>
+
     </div>
-    <picture>
-      <!-- Desktop screen -->
-      <source media="(min-width:1200px)"
-        srcset="./images/hero/hero-img1_lg@1x.png 1x, ./images/hero/hero-img1_lg@2x.png 2x" type="image/png">
-      <!-- Tablet screen -->
-      <source media="(min-width:768px)"
-        srcset="./images/hero/hero-img1_md@1x.png 1x, ./images/hero/hero-img1_md@2x.png 2x" type="image/png">
-      <!-- Mobile screen -->
-      <source media="(max-width:767px)"
-        srcset="./images/hero/hero-img1_sm@1x.png 1x, ./images/hero/hero-img1_sm@2x.png 2x" type="image/png">
-      <img class="hero__img-icecream img" src="./images/hero/hero-img1_sm@1x.png" alt="ice Cream" loading="lazy">
-    </picture>
-
-    <picture>
-      <!-- Desktop screen -->
-      <source media="(min-width:1200px)"
-        srcset="./images/hero/hero-img2_lg@1x.png 1x, ./images/hero/hero-img2_lg@2x.png 2x" type="image/png">
-      <!-- Tablet screen -->
-      <source media="(min-width:768px)"
-        srcset="./images/hero/hero-img2_md@1x.png 1x, ./images/hero/hero-img2_md@2x.png 2x" type="image/png">
-      <!-- Mobile screen -->
-      <source media="(max-width:767px)"
-        srcset="./images/hero/hero-img2_sm@1x.png 1x, ./images/hero/hero-img2_sm@2x.png 2x" type="image/png">
-      <img class="hero__img-dots img" src="./images/hero/hero-img2_sm@1x.png" alt="dots" loading="lazy">
-    </picture>
-
   </div>
 
 </section>
