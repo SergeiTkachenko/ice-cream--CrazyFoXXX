@@ -59,13 +59,14 @@
 
 .advantages__number {
   margin-bottom: 18px;
-  // font-family: 'Roboto';
+  font-family: 'Roboto';
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
 
   text-transform: uppercase;
   @include medium-min {
+    font-family: var(--main-font);
     font-size: 48px;
     line-height: calc(58 / 48);
     margin-bottom: 16px;
