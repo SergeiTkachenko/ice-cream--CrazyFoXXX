@@ -126,7 +126,7 @@
   .social__link:focus & {
     fill: #fcfcfc;
 
-    animation: shake 2s;
+    animation: random-shake 2s;
     animation-iteration-count: infinite;
   }
 
@@ -136,7 +136,7 @@
   }
 }
 
-@keyframes shake {
+@keyframes random-shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
   }
