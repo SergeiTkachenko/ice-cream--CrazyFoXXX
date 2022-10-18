@@ -11,7 +11,7 @@
   border: 2px solid var(--accent-color);
   border-radius: 10px;
 
-  @include small-min {
+  @include medium-min {
     width: 568px;
     padding: 32px 60px;
   }
@@ -36,7 +36,7 @@
   background-color: transparent;
   cursor: pointer;
 
-  @include small-min {
+  @include medium-min {
     width: 20px;
     height: 20px;
   }
@@ -47,7 +47,7 @@
   width: 9px;
   height: 9px;
 
-  @include small-min {
+  @include medium-min {
     width: 11px;
     height: 11px;
   }
@@ -65,7 +65,7 @@
   color: var(--main-dark);
   letter-spacing: 0em;
 
-  @include small-min {
+  @include medium-min {
     margin-bottom: 24px;
     width: 322px;
     font-size: 20px;
@@ -93,7 +93,7 @@
   gap: 20px;
   margin-top: 60px;
 
-  @include small-min {
+  @include medium-min {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -109,17 +109,16 @@
   border-radius: 20px;
   margin-bottom: 40px;
 
-  @include small-min {
+  @include medium-min {
     margin-bottom: 0;
   }
 }
 
 .buy-now__item-cream {
   border: 2px solid #aec6a5;
-  // &:hover,
-  // &:focus {
-  //   background-color: #aec6a5;
-  // }
+  &:hover {
+    background-color: rgb(174, 198, 165, 0.5);
+  }
 }
 
 .buy-now__checkbox-input:checked + .buy-now__item-cream {
@@ -128,10 +127,9 @@
 
 .buy-now__item-coffee {
   border: 2px solid #efd478;
-  // &:hover,
-  // &:focus {
-  //   background-color: #efd478;
-  // }
+  &:hover {
+    background-color: rgba(239, 211, 118, 0.5);
+  }
 }
 
 .buy-now__checkbox-input:checked + .buy-now__item-coffee {
@@ -140,10 +138,9 @@
 
 .buy-now__item-milkshake {
   border: 2px solid #d6936d;
-  // &:hover,
-  // &:focus {
-  //   background-color: #d6936d;
-  // }
+  &:hover {
+    background-color: rgb(214, 147, 109, 0.5);
+  }
 }
 
 .buy-now__checkbox-input:checked + .buy-now__item-milkshake {
@@ -158,7 +155,7 @@
 .buy-now__img {
   position: absolute;
   top: -30%;
-  width: 150px;
+  border-radius: 50%;
 }
 
 .buy-now__text {
@@ -194,7 +191,7 @@
     border-color: var(--accent-color);
   }
 
-  @include small-min {
+  @include medium-min {
     padding: 11px 16px;
     margin-bottom: 16px;
 
@@ -206,7 +203,7 @@
     line-height: calc(17 / 12);
     color: var(--main-dark);
 
-    @include small-min {
+    @include medium-min {
       font-size: 14px;
       line-height: calc(20 / 14);
     }
@@ -236,7 +233,7 @@
     border-color: var(--accent-color);
   }
 
-  @include small-min {
+  @include medium-min {
     padding: 11px 16px;
     margin-bottom: 32px;
 
@@ -249,7 +246,7 @@
     line-height: calc(17 / 12);
     color: var(--main-dark);
 
-    @include small-min {
+    @include medium-min {
       font-size: 14px;
       line-height: calc(20 / 14);
     }
