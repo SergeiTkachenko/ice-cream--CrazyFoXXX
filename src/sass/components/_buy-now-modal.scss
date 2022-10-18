@@ -76,6 +76,7 @@
 .buy-now__list {
   display: flex;
   justify-content: center;
+  margin-top: 100px;
   margin-bottom: 40px;
   gap: 32px;
 }
@@ -94,12 +95,20 @@
   }
 }
 
+.buy-now__checkbox-input:checked + .buy-now__item-cream {
+  background-color: #aec6a5;
+}
+
 .buy-now__item-coffee {
   border: 2px solid #efd478;
   &:hover,
   &:focus {
     background-color: #efd478;
   }
+}
+
+.buy-now__checkbox-input:checked + .buy-now__item-coffee {
+  background-color: #efd478;
 }
 
 .buy-now__item-milkshake {
@@ -110,12 +119,27 @@
   }
 }
 
+.buy-now__checkbox-input:checked + .buy-now__item-milkshake {
+  background-color: #d6936d;
+}
+
+.buy-now__checkbox-input {
+  position: absolute;
+  opacity: 0;
+}
+
+.buy-now__img {
+  position: absolute;
+  top: -30%;
+  width: 120%;
+}
+
 .buy-now__text {
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #131313;
-  margin-bottom: 40px;
+  padding: 95px 1px 20px 1px;
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
