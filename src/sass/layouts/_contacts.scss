@@ -40,6 +40,16 @@
   border-radius: 30px;
 
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+  transition: var(--main-animation);
+
+  &:hover,
+  &:focus {
+    box-shadow: #f8d24e 0px 20px 30px -10px;
+
+    animation: small-shake 1s;
+  }
+
   @include medium-max {
     display: block;
     text-align: center;
@@ -54,6 +64,33 @@
     padding: 40px 40px;
   }
 }
+
+@keyframes small-shake {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  20% {
+    transform: translate(0px, 0px) rotate(+1deg);
+  }
+
+  40% {
+    transform: translate(0px, 0px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(0px, 0px) rotate(+1deg);
+  }
+
+  80% {
+    transform: translate(0px, 0px) rotate(-1deg);
+  }
+
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
 .contacts__category {
   @include flex-center;
   padding: 0 22px;
