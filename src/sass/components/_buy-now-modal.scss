@@ -11,7 +11,7 @@
   border: 2px solid var(--accent-color);
   border-radius: 10px;
 
-  @include medium-min {
+  @include small-min {
     width: 568px;
     padding: 32px 60px;
   }
@@ -36,7 +36,7 @@
   background-color: transparent;
   cursor: pointer;
 
-  @include medium-min {
+  @include small-min {
     width: 20px;
     height: 20px;
   }
@@ -47,7 +47,7 @@
   width: 9px;
   height: 9px;
 
-  @include medium-min {
+  @include small-min {
     width: 11px;
     height: 11px;
   }
@@ -65,7 +65,7 @@
   color: var(--main-dark);
   letter-spacing: 0em;
 
-  @include medium-min {
+  @include small-min {
     margin-bottom: 24px;
     width: 322px;
     font-size: 20px;
@@ -73,26 +73,53 @@
   }
 }
 
+// .buy-now__list {
+//   display: flex;
+//   justify-content: center;
+//   margin-top: 100px;
+//   margin-bottom: 40px;
+//   gap: 32px;
+
+//   @include medium-min {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+// }
+
 .buy-now__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 40px;
-  gap: 32px;
+  gap: 20px;
+  margin-top: 60px;
+
+  @include small-min {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    gap: 32px;
+  }
 }
 
 .buy-now__item {
   position: relative;
   max-width: 132px;
   border-radius: 20px;
+  margin-bottom: 40px;
+
+  @include small-min {
+    margin-bottom: 0;
+  }
 }
 
 .buy-now__item-cream {
   border: 2px solid #aec6a5;
-  &:hover,
-  &:focus {
-    background-color: #aec6a5;
-  }
+  // &:hover,
+  // &:focus {
+  //   background-color: #aec6a5;
+  // }
 }
 
 .buy-now__checkbox-input:checked + .buy-now__item-cream {
@@ -101,10 +128,10 @@
 
 .buy-now__item-coffee {
   border: 2px solid #efd478;
-  &:hover,
-  &:focus {
-    background-color: #efd478;
-  }
+  // &:hover,
+  // &:focus {
+  //   background-color: #efd478;
+  // }
 }
 
 .buy-now__checkbox-input:checked + .buy-now__item-coffee {
@@ -113,10 +140,10 @@
 
 .buy-now__item-milkshake {
   border: 2px solid #d6936d;
-  &:hover,
-  &:focus {
-    background-color: #d6936d;
-  }
+  // &:hover,
+  // &:focus {
+  //   background-color: #d6936d;
+  // }
 }
 
 .buy-now__checkbox-input:checked + .buy-now__item-milkshake {
@@ -131,7 +158,7 @@
 .buy-now__img {
   position: absolute;
   top: -30%;
-  width: 120%;
+  width: 150px;
 }
 
 .buy-now__text {
@@ -145,6 +172,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 1.2;
+  width: 130px;
 }
 
 .buy-now__input {
@@ -166,7 +194,7 @@
     border-color: var(--accent-color);
   }
 
-  @include medium-min {
+  @include small-min {
     padding: 11px 16px;
     margin-bottom: 16px;
 
@@ -178,7 +206,7 @@
     line-height: calc(17 / 12);
     color: var(--main-dark);
 
-    @include medium-min {
+    @include small-min {
       font-size: 14px;
       line-height: calc(20 / 14);
     }
@@ -208,7 +236,7 @@
     border-color: var(--accent-color);
   }
 
-  @include medium-min {
+  @include small-min {
     padding: 11px 16px;
     margin-bottom: 32px;
 
@@ -221,7 +249,7 @@
     line-height: calc(17 / 12);
     color: var(--main-dark);
 
-    @include medium-min {
+    @include small-min {
       font-size: 14px;
       line-height: calc(20 / 14);
     }
