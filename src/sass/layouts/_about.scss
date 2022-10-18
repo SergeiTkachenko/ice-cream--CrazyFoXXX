@@ -105,6 +105,8 @@
     rgba(248, 210, 78, 0.7)
   );
 
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.9);
+
   @media screen and (min-width: 768px) {
     width: 335px;
     height: 335px;
@@ -115,6 +117,10 @@
     height: 490px;
     transform: translateY(-530px) translateX(9px);
   }
+}
+
+.about__picture {
+  border-radius: 50%;
 }
 
 .about__info {
