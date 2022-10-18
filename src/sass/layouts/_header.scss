@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-
 }
 
 .button.header__button {
@@ -29,7 +28,6 @@
     width: 60px;
     height: 65px;
   }
-
 }
 
 .header__logo {
@@ -89,12 +87,14 @@
   transition: color var(--main-animation);
 
   text-decoration: none;
-  color: #FCFCFC;
+  color: #fcfcfc;
   padding-top: 40px;
   padding-bottom: 30px;
 
   &:hover,
   &:focus {
     color: var(--accent-color);
+
+    animation: small-shake 1s;
   }
 }

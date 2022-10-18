@@ -51,6 +51,12 @@
     }
   }
 }
+
+.advantages__icon:hover {
+  animation: random-shake 2s;
+  animation-iteration-count: infinite;
+}
+
 .advantages__number {
   margin-bottom: 18px;
   // font-family: 'Roboto';
