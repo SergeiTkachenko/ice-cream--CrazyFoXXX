@@ -30,6 +30,16 @@
       background-image: url('../images/backgroung/background-img3_lg@2x.jpg');
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/backgroung/background-img1@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/backgroung/background-img1@2x.jpg);
+    }
+  }
   background-size: cover;
   background-repeat: no-repeat;
 
