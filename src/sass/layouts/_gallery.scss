@@ -27,11 +27,12 @@
 
     li {
       button:before {
-        color: pink;
-        opacity: 0.2;
+        color: #D9D9D9;
+        opacity: 1;
         font-size: 12px;
       }
       &.slick-active button:before {
+        color: var(--main-background);
         opacity: 1;
       }
     }
