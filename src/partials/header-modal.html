@@ -1,7 +1,9 @@
 <!-- Мобільне меню -->
 <div class="menu js-menu-container">
-  <a class="header__logo" href="./index.html">
-    <img src="./images/logo.png" alt="logo" width="40" height="37">
+  <a class="logo menu__logo" href="./index.html">
+    <svg class="logo__icon" width="40" height="37">
+      <use href="./images/sprites.svg#icon-logo-ice"></use>
+    </svg>
   </a>
 
   <button class="menu-toggle js-close-menu" aria-expanded="false" type="button">
@@ -16,7 +18,7 @@
         <a class="menu-nav__link" href="">Home</a>
       </li>
       <li class="menu-nav__item">
-        <a class="menu-nav__link menu-nav__link--active" href="">How it’s made?</a>
+        <a class="menu-nav__link" href="">How it’s made?</a>
       </li>
       <li class="menu-nav__item">
         <a class="menu-nav__link" href="">Our products</a>
@@ -27,6 +29,11 @@
     </ul>
   </nav>
 
-  <button class="menu__button button js-open-modal" data-modal="4" type="button">Buy now</button>
+  <button class="menu__button button js-open-modal" data-modal="4" type="button">
+    Buy now
+    <svg class="button__svg" width="16" height="16">
+      <use href="./images/sprites.svg#icon-pointer"></use>
+    </svg>
+  </button>
 
 </div>
