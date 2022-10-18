@@ -7,7 +7,7 @@
 
     <div class="about__box">
       <div class="about__img">
-        <picture>
+        <picture class="img-wrap">
           <!-- desk -->
           <source
             media="(min-width:1200px)"
@@ -59,10 +59,14 @@
             </p>
           </li>
         </ul>
-        <button type="button" class="button js-open-modal" data-modal="3">
+        <button
+          type="button"
+          class="button about__btn js-open-modal"
+          data-modal="3"
+        >
           <span class="about__btn-label">Read more</span>
-          <svg class="about__btn-icon" width="12" height="12">
-            <use href="./images/sprites.svg#con-arrov-1"></use>
+          <svg class="about__btn-icon" width="16" height="16">
+            <use href="./images/sprites.svg#icon-pointer"></use>
           </svg>
         </button>
       </div>
