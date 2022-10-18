@@ -1,15 +1,20 @@
+// - 767 . Mobile screen
+@include medium-max {
+}
+// 768 <-> 1199 . Tablet screen
+@include medium-only {
+}
+// 1200 + . Desktop screen
+@include large-min {
+}
+
 .hero {
   padding-top: 55px;
-}
-
-.hero__padding {
-  height: 239px;
-}
-
-// Tablet screen
-@media screen and (min-width: 768px) {
-  .hero {
-    padding-top: 32px;
+  @include medium-only {
+    padding-top: 24px;
+  }
+  @include large-min {
+    padding-top: 44px;
   }
 }
 
@@ -27,35 +32,53 @@
 
   margin-bottom: 32px;
 
-  font-family: 'Seymour One';
-  font-style: normal;
+  font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 26px;
   line-height: calc(33 / 26);
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #fcfcfc;
+  color: var(--main-light);
+  @include medium-only {
+    max-width: 181px;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    line-height: calc(23 / 18);
+    text-transform: uppercase;
+  }
+  @include large-min {
+    max-width: 367px;
+
+    margin-bottom: 28px;
+
+    font-size: 38px;
+    line-height: calc(48 / 38);
+  }
 }
 
 .hero__title--accent {
-  font-family: 'Seymour One';
-  font-style: normal;
-  font-weight: 400;
   font-size: 34px;
   line-height: calc(33 / 34);
   text-transform: uppercase;
-
-  color: #fcfcfc;
+  @include medium-only {
+    font-size: 24px;
+    line-height: calc(13 / 24);
+    text-transform: uppercase;
+  }
+  @include large-min {
+    font-size: 38px;
+    line-height: calc(48 / 38);
+  }
 }
 
 // Distribution information
-
 .distribution__quantity {
   margin-bottom: 4px;
 
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 900;
   font-size: 28px;
   line-height: calc(34 / 28);
@@ -63,29 +86,47 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #131313;
+  color: var(--main-dark);
+  @include large-min {
+    font-size: 46px;
+    line-height: calc(56 / 46);
+  }
 }
 
 .distribution__type {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
   font-size: 8px;
   line-height: calc(10 / 8);
   text-align: right;
 
-  color: #fcfcfc;
+  color: var(--main-light);
+  @include large-min {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    text-align: right;
+  }
 }
 
 .distribution__item:first-child {
   margin-bottom: 20px;
+  @include large-min {
+    margin-bottom: 18px;
+  }
 }
 
 // Hero grouop buttons for mobile and tablet
 .hero__group-buttons {
   display: flex;
   gap: 8px;
-  // margin-bottom: 28px;
+  @include medium-max {
+    margin-bottom: 0px;
+  }
+  @include medium-only {
+    margin-bottom: 28px;
+  }
+  @include large-min {
+    margin-bottom: 28px;
+    gap: 12px;
+  }
 }
 
 .hero__group-buttons .button--transparent {
@@ -96,9 +137,16 @@
   font-weight: 600;
   font-size: 8px;
   line-height: calc(10 / 8);
+  @include large-min {
+    width: 134px;
+    height: 42px;
+
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
 }
 
-.hero__group-buttons .button--non-border {
+.hero__group-buttons .button--how {
   width: 82px;
   height: 24px;
 
@@ -109,18 +157,19 @@
 
   background-color: transparent;
   color: var(--default-btn);
+  @include large-min {
+    width: 154px;
+    height: 40px;
+
+    padding: 0;
+
+    font-size: 14px;
+    line-height: calc(18 / 14);
+  }
 }
 
-.hero__group-buttons .button--non-border:hover {
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-  color: var(--hover-btn);
-}
-
-.hero__group-buttons .button--non-border:focus {
-  background-color: transparent;
-  border: none;
+.hero__group-buttons .button--how:hover,
+.hero__group-buttons .button--how:focus {
   box-shadow: none;
 }
 
@@ -128,12 +177,19 @@
 .hero__thumb {
   display: flex;
   align-items: center;
+  @include large-min {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .thumb__img-plate {
   position: relative;
-  z-index: 1;
+
   margin-right: 33px;
+  @include large-min {
+    margin-right: 14px;
+  }
 }
 
 .thumb__desc {
@@ -143,17 +199,34 @@
 
   font-size: 12px;
   line-height: calc(17 / 12);
+  @include large-min {
+    max-width: 225px;
+
+    margin-bottom: 32px;
+
+    padding-top: 45px;
+    font-size: 14px;
+    line-height: calc(20 / 14);
+  }
 }
 
 .thumb-link {
-  fill: white;
+  fill: var(--main-light);
+}
+
+.hero__padding {
+  height: 239px;
+  @include medium-only {
+    height: 13px;
+  }
+  @include large-min {
+    height: 65px;
+  }
 }
 
 // Image absolute position for mobile screen
 .hero__img-icecream {
   position: absolute;
-
-  z-index: 1;
 
   left: 0;
   bottom: 0;
@@ -164,6 +237,17 @@
     rgba(252, 252, 252, 0.5) 20%,
     rgba(255, 255, 255, 0) 65%
   );
+
+  @include medium-max {
+    left: 52%;
+    transform: translate(-50%, 0);
+  }
+  @include medium-only {
+    left: 416px;
+  }
+  @include large-min {
+    left: 633px;
+  }
 }
 
 .hero__img-dots {
@@ -173,10 +257,20 @@
 
   bottom: 0;
   left: 0;
+  @include medium-max {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  @include medium-only {
+    left: 0;
+  }
+  @include large-min {
+    left: 0;
+  }
 }
 
-// Mobile screen
-@media screen and (max-width: 767px) {
+// Mobile screen. - 767px
+@include medium-max {
   // Addition blocks for tablet and desktop
   .hero__distribution {
     display: none;
@@ -184,179 +278,5 @@
 
   .hero__thumb {
     display: none;
-  }
-  // End Addition
-
-  .hero__group-buttons {
-    margin-bottom: 0px;
-  }
-
-  // img
-
-  .hero__img-dots {
-    width: 480px;
-  }
-}
-
-// Tablet screen
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .hero {
-    padding-top: 38px;
-  }
-
-  .hero__title {
-    max-width: 181px;
-
-    margin-top: 10px;
-    margin-bottom: 20px;
-
-    font-size: 18px;
-    line-height: calc(23 / 18);
-    text-transform: uppercase;
-  }
-
-  .hero__title--accent {
-    font-size: 24px;
-    line-height: calc(13 / 24);
-    text-transform: uppercase;
-  }
-
-  .hero__group-buttons {
-    margin-bottom: 28px;
-  }
-
-  .hero__padding {
-    height: 13px;
-  }
-
-  // Image position absolute for tablet screen
-  .hero__img-icecream {
-    position: absolute;
-
-    bottom: 0;
-    left: 416px;
-  }
-
-  .hero__img-dots {
-    position: absolute;
-
-    bottom: 0;
-    left: 0;
-  }
-}
-
-// Desktop screen
-@media screen and (min-width: 1200px) {
-  .hero {
-    padding-top: 44px;
-  }
-
-  .hero__title {
-    max-width: 367px;
-
-    margin-bottom: 28px;
-
-    font-size: 38px;
-    line-height: calc(48 / 38);
-  }
-
-  .hero__title--accent {
-    font-size: 38px;
-    line-height: calc(48 / 38);
-  }
-
-  // Distribution information
-  .distribution__quantity {
-    font-size: 46px;
-    line-height: calc(56 / 46);
-  }
-
-  .distribution__type {
-    font-size: 14px;
-    line-height: calc(17 / 14);
-    text-align: right;
-  }
-
-  .distribution__item:first-child {
-    margin-bottom: 18px;
-  }
-
-  // Hero grouop buttons for desktop
-  .hero__group-buttons {
-    margin-bottom: 28px;
-    gap: 12px;
-  }
-
-  .hero__group-buttons .button--transparent {
-    width: 134px;
-    height: 42px;
-
-    font-size: 14px;
-    line-height: calc(17 / 14);
-  }
-
-  .hero__group-buttons .button--non-border {
-    width: 154px;
-    height: 40px;
-
-    font-size: 14px;
-    line-height: calc(18 / 14);
-  }
-
-  .hero__group-buttons .button--non-border:hover {
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    color: var(--hover-btn);
-  }
-
-  .hero__group-buttons .button--non-border:focus {
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-  }
-
-  // Hero thumb
-  .hero__thumb {
-    display: flex;
-    align-items: center;
-  }
-
-  .thumb__img-plate {
-    margin-right: 14px;
-  }
-
-  .thumb__desc {
-    max-width: 225px;
-
-    margin-bottom: 32px;
-
-    font-size: 14px;
-    line-height: calc(20 / 14);
-  }
-
-  .thumb-link {
-    fill: white;
-  }
-
-  .hero__padding {
-    height: 65px;
-  }
-
-  // Image position absolute for desktop screen
-  .hero__img-icecream {
-    position: absolute;
-
-    bottom: 0px;
-    left: 633px;
-    // transform: translate(-50%, -50%);
-  }
-
-  .hero__img-dots {
-    position: absolute;
-
-    bottom: 0;
-    left: 0;
-    // transform: translate(-50%, -50%);
   }
 }

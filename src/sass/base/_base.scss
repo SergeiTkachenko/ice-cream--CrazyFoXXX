@@ -5,7 +5,12 @@ body {
 
   color: var(--main-light);
   background-color: var(--main-background);
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
+
 
 .backdrop {
   position: fixed;
@@ -15,6 +20,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 
+
   transition: opacity var(--main-anim), visibility var(--main-anim);
 }
 
@@ -23,4 +29,3 @@ body {
   pointer-events: none;
   visibility: hidden;
 }
-

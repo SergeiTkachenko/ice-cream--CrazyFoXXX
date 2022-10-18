@@ -1,22 +1,24 @@
 <header class="header">
   <div class="container header__container">
-    <a class="header__logo" href="./index.html">
-      <img src="./images/logo.png" alt="logo" width="40" height="37">
+    <a class="logo header__logo" href="./index.html">
+      <svg class="logo__icon header__icon" width="40" height="37">
+        <use href="./images/sprites.svg#icon-logo-ice"></use>
+      </svg>
     </a>
 
     <nav class="site-nav">
       <ul class="site-nav__list">
         <li class="site-nav__item">
-          <a class="site-nav__link" href="">Home</a>
+          <a class="site-nav__link" href="/">Home</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="">How it’s made?</a>
+          <a class="site-nav__link" href="#about">How it’s made?</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="">Our products</a>
+          <a class="site-nav__link" href="#products">Our products</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="">Contact</a>
+          <a class="site-nav__link" href="#contacts">Contact</a>
         </li>
       </ul>
     </nav>
@@ -28,6 +30,11 @@
       </svg>
     </button>
 
-    <button class="header__button button js-open-modal" data-modal="4" type="button">Buy now</button>
+    <button class="button header__button  js-open-modal" data-modal="4" type="button">
+      Buy now
+      <svg class="button__svg" width="16" height="16">
+        <use href="./images/sprites.svg#icon-pointer"></use>
+      </svg>
+    </button>
   </div>
 </header>
