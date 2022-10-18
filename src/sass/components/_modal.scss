@@ -29,7 +29,8 @@
   transition: transform var(--main-animation), visibility var(--main-animation),
     opacity var(--main-animation);
 
-  z-index: 30; /* Должен быть выше чем у подложки*/
+  z-index: 30;
+  /* Должен быть выше чем у подложки*/
 }
 
 /* Стили для активных классов подложки и окна */
