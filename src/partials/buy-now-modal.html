@@ -15,11 +15,16 @@
     />
     <label class="buy-now__item buy-now__item-cream" for="checkbox-cream"
       >checked
-      <img
-        class="buy-now__img"
-        src="./images/modal/modal-img1@2x.png"
-        alt="colorful scoops of ice cream in waffle cones"
-      />
+      <picture>
+        <source srcset='./images/modal/modal-img1@1x.png 1x,
+        ./images/modal/modal-img1@2x.png 2x' type='image/jpg'" />
+        <img
+          class="buy-now__img"
+          src="./images/modal/modal-img1@1x.png"
+          alt="colorful scoops of ice cream in waffle cones"
+        />
+      </picture>
+
       <p class="buy-now__text">ice cream</p>
     </label>
 
@@ -32,11 +37,16 @@
 
     <label class="buy-now__item buy-now__item-coffee" for="checkbox-coffee"
       >checked
-      <img
-        class="buy-now__img"
-        src="./images/modal/modal-img2@2x.png"
-        alt="transparent cup of coffee with spices"
-      />
+      <picture>
+        <source srcset='./images/modal/modal-img2@1x.png 1x,
+        ./images/modal/modal-img2@2x.png 2x' type='image/jpg'" />
+        <img
+          class="buy-now__img"
+          src="./images/modal/modal-img2@1x.png"
+          alt="transparent cup of coffee with spices"
+        />
+      </picture>
+
       <p class="buy-now__text">ice coffee</p>
     </label>
 
@@ -50,12 +60,17 @@
     <label
       class="buy-now__item buy-now__item-milkshake"
       for="checkbox-milkshake"
-    >
-      <img
-        class="buy-now__img"
-        src="./images/modal/modal-img3@2x.png"
-        alt="milk chocolate cocktail with cream and cookies"
-      />
+      >checked
+      <picture
+        ><source srcset='./images/modal/modal-img3@1x.png 1x,
+        ./images/modal/modal-img3@2x.png 2x' type='image/jpg'" />
+        <img
+          class="buy-now__img"
+          src="./images/modal/modal-img3@1x.png"
+          alt="milk chocolate cocktail with cream and cookies"
+        />
+      </picture>
+
       <p class="buy-now__text">milkshake</p>
     </label>
   </div>

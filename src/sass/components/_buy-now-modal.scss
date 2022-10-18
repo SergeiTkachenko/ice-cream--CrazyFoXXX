@@ -73,25 +73,51 @@
   }
 }
 
+// .buy-now__list {
+//   display: flex;
+//   justify-content: center;
+//   margin-top: 100px;
+//   margin-bottom: 40px;
+//   gap: 32px;
+
+//   @include medium-min {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+// }
+
 .buy-now__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 40px;
-  gap: 32px;
+  gap: 20px;
+  margin-top: 60px;
+
+  @include medium-min {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    gap: 32px;
+  }
 }
 
 .buy-now__item {
   position: relative;
   max-width: 132px;
   border-radius: 20px;
+  margin-bottom: 40px;
+
+  @include medium-min {
+    margin-bottom: 0;
+  }
 }
 
 .buy-now__item-cream {
   border: 2px solid #aec6a5;
-  &:hover,
-  &:focus {
-    background-color: #aec6a5;
+  &:hover {
+    background-color: rgb(174, 198, 165, 0.5);
   }
 }
 
@@ -101,9 +127,8 @@
 
 .buy-now__item-coffee {
   border: 2px solid #efd478;
-  &:hover,
-  &:focus {
-    background-color: #efd478;
+  &:hover {
+    background-color: rgba(239, 211, 118, 0.5);
   }
 }
 
@@ -113,9 +138,8 @@
 
 .buy-now__item-milkshake {
   border: 2px solid #d6936d;
-  &:hover,
-  &:focus {
-    background-color: #d6936d;
+  &:hover {
+    background-color: rgb(214, 147, 109, 0.5);
   }
 }
 
@@ -131,7 +155,7 @@
 .buy-now__img {
   position: absolute;
   top: -30%;
-  width: 120%;
+  border-radius: 50%;
 }
 
 .buy-now__text {
@@ -145,6 +169,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 1.2;
+  width: 130px;
 }
 
 .buy-now__input {
