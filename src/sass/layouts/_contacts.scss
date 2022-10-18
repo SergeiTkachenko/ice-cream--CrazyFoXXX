@@ -41,7 +41,7 @@
 
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 
-  transition: var(--main-animation);
+  transition: box-shadow var(--main-animation);
 
   &:hover,
   &:focus {
@@ -62,32 +62,6 @@
   @include large-min {
     width: calc((100% - 64px) / 3);
     padding: 40px 40px;
-  }
-}
-
-@keyframes small-shake {
-  0% {
-    transform: translate(0px, 0px) rotate(0deg);
-  }
-
-  20% {
-    transform: translate(0px, 0px) rotate(+1deg);
-  }
-
-  40% {
-    transform: translate(0px, 0px) rotate(-1deg);
-  }
-
-  60% {
-    transform: translate(0px, 0px) rotate(+1deg);
-  }
-
-  80% {
-    transform: translate(0px, 0px) rotate(-1deg);
-  }
-
-  100% {
-    transform: translate(0px, 0px) rotate(0deg);
   }
 }
 
