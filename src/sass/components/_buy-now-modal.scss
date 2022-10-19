@@ -177,9 +177,10 @@
   border: 2px solid #aec6a5;
 
   transition: background-color var(--main-animation);
-
-  &:hover {
-    background-color: rgb(174, 198, 165, 0.5);
+  @include large-min {
+    &:hover {
+      background-color: rgb(174, 198, 165, 0.5);
+    }
   }
 }
 
@@ -193,8 +194,10 @@
 
   transition: background-color var(--main-animation);
 
-  &:hover {
-    background-color: rgba(239, 211, 118, 0.5);
+  @include large-min {
+    &:hover {
+      background-color: rgba(239, 211, 118, 0.5);
+    }
   }
 }
 
@@ -208,8 +211,10 @@
 
   transition: background-color var(--main-animation);
 
-  &:hover {
-    background-color: rgb(214, 147, 109, 0.5);
+  @include large-min {
+    &:hover {
+      background-color: rgb(214, 147, 109, 0.5);
+    }
   }
 }
 
