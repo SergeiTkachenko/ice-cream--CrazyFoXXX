@@ -1,6 +1,6 @@
 <div class="buy-now__backdrop-modal modal" data-modal="4">
   <button class="buy-now__btn-close js-modal-close" type="button">
-    <svg class="buy-now__btn-icon" width="9" height="9">
+    <svg class="buy-now__btn-icon" width="16" height="16">
       <use href="./images/sprites.svg#icon-close"></use>
     </svg>
   </button>
@@ -15,9 +15,15 @@
     />
     <label class="buy-now__item buy-now__item-cream" for="checkbox-cream"
       >checked
+
+      <div class="buy-now__cover-one"></div>
       <picture>
-        <source srcset='./images/modal/modal-img1@1x.png 1x,
-        ./images/modal/modal-img1@2x.png 2x' type='image/jpg'" />
+        <source 
+        media="(min-width: 320px)"
+        srcset='
+          ./images/modal/modal-img1@1x.png 1x,
+          ./images/modal/modal-img1@2x.png 2x' 
+        />
         <img
           class="buy-now__img"
           src="./images/modal/modal-img1@1x.png"
@@ -37,9 +43,14 @@
 
     <label class="buy-now__item buy-now__item-coffee" for="checkbox-coffee"
       >checked
+      <div class="buy-now__cover-second"></div>
       <picture>
-        <source srcset='./images/modal/modal-img2@1x.png 1x,
-        ./images/modal/modal-img2@2x.png 2x' type='image/jpg'" />
+        <source 
+        media="(min-width: 320px)"
+        srcset='
+        ./images/modal/modal-img2@1x.png 1x,
+        ./images/modal/modal-img2@2x.png 2x'
+        />
         <img
           class="buy-now__img"
           src="./images/modal/modal-img2@1x.png"
@@ -61,9 +72,14 @@
       class="buy-now__item buy-now__item-milkshake"
       for="checkbox-milkshake"
       >checked
-      <picture
-        ><source srcset='./images/modal/modal-img3@1x.png 1x,
-        ./images/modal/modal-img3@2x.png 2x' type='image/jpg'" />
+      <div class="buy-now__cover-third"></div>
+      <picture>
+        <source 
+        media="(min-width: 320px)"
+        srcset='
+        ./images/modal/modal-img3@1x.png 1x,
+        ./images/modal/modal-img3@2x.png 2x'  
+        />
         <img
           class="buy-now__img"
           src="./images/modal/modal-img3@1x.png"
