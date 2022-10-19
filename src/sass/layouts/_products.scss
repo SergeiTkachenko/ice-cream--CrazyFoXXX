@@ -4,14 +4,13 @@
 
   background-color: var(--secondary-background-color);
 
-  background-position: center;
-  background-size: cover;
-  background-image: url(../images/backgroung/background-img3_sm@1x.jpg);
+  background-size: contain;
+  background-image: url(../images/backgroung/background-img4_sm@1x.jpg);
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/backgroung/background-img3_sm@2x.jpg);
+    background-image: url(../images/backgroung/background-img4_sm@2x.jpg);
   }
 
   @media screen and (min-width: 481px) {
@@ -26,6 +25,8 @@
 
   @media screen and (min-width: 769px) {
     background-image: url(../images/backgroung/background-img3_lg@1x.jpg);
+    background-size: cover;
+    background-position: center;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -36,6 +37,8 @@
 
   @media screen and (min-width: 1200px) {
     background-image: url(../images/backgroung/background-img1@1x.jpg);
+    background-size: cover;
+    background-position: center;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),

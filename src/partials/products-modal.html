@@ -1,8 +1,8 @@
-n<!-- first modal -->
+<!-- first modal -->
 
   <div class="products-modal modal" data-modal="5">
     <button type="button" class="products-modal__button-close js-modal-close">
-      <svg width="18px" height="18px">
+      <svg width="16px" height="16px">
         <use href="./images/sprites.svg#icon-close"></use>
       </svg>
     </button>
@@ -10,6 +10,7 @@ n<!-- first modal -->
     <p class="products-modal__main-title">Chokolate icecream</p>
 
     <div class="products-modal__image">
+      <div class="products-modal__cover"></div>
       <picture>
         <source
           media="(min-width: 320px)"
@@ -18,7 +19,7 @@ n<!-- first modal -->
             ./images/modal/modal-img4@2x.png 2x
           "
         />
-        <img src="./images/modal/modal-img4@1x.png" alt="chocolate icecream" />
+        <img  class="products-modal__image-circle" src="./images/modal/modal-img4@1x.png" alt="chocolate icecream" />
       </picture>
     </div>
 
@@ -129,137 +130,6 @@ n<!-- first modal -->
 
 <!-- second modal -->
 
-
-  <div class="products-modal modal" data-modal="6">
-    <button type="button" class="products-modal__button-close js-modal-close">
-      <svg width="18px" height="18px">
-        <use href="./images/sprites.svg#icon-close"></use>
-      </svg>
-    </button>
-
-    <p class="products-modal__main-title">Chokolate milshake</p>
-
-    <div class="products-modal__image">
-      <picture>
-        <source
-          media="(min-width: 320px)"
-          srcset="
-            ./images/modal/modal-img3@1x.png 1x,
-            ./images/modal/modal-img3@2x.png 2x
-          "
-        />
-        <img src="./images/modal/modal-img3@1x.png" alt="chocolate icecream" />
-      </picture>
-    </div>
-
-    <div class="products-modal__calories">
-      <ul class="products-modal__list">
-        <li class="products-modal__item">
-          <div class="products-modal__block">
-            <div class="products-modal__block-dub">
-              <p class="products-modal__value-dub">420</p>
-            </div>
-            <p class="products-modal__value">kcal</p>
-          </div>
-        </li>
-        <li class="products-modal__item">
-          <div class="products-modal__block">
-            <div class="products-modal__block-dub">
-              <p class="products-modal__value-dub">9g</p>
-            </div>
-            <p class="products-modal__value">Prote...</p>
-          </div>
-        </li>
-        <li class="products-modal__item">
-          <div class="products-modal__block">
-            <div class="products-modal__block-dub">
-              <p class="products-modal__value-dub">12,2g</p>
-            </div>
-            <p class="products-modal__value">Fats</p>
-          </div>
-        </li>
-        <li class="products-modal__item">
-          <div class="products-modal__block">
-            <div class="products-modal__block-dub">
-              <p class="products-modal__value-dub">80,4g</p>
-            </div>
-            <p class="products-modal__value">Carbs</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="products-modal__ingredients">
-      <p class="products-modal__title">Ingredients</p>
-
-      <table class="products-modal__table">
-        <tr class="products-modal__row">
-          <td class="products-modal__cell">Milk</td>
-          <td class="products-modal__cell">400ml</td>
-        </tr>
-        <tr class="products-modal__row">
-          <td class="products-modal__cell">Belgian chocolate</td>
-          <td class="products-modal__cell">60g</td>
-        </tr>
-        <tr class="products-modal__row">
-          <td class="products-modal__cell">Cream</td>
-          <td class="products-modal__cell">150 ml</td>
-        </tr>
-        <tr class="products-modal__row">
-          <td class="products-modal__cell">Cocoa powder</td>
-          <td class="products-modal__cell">60g</td>
-        </tr>
-        <tr class="products-modal__row">
-          <td class="products-modal__cell">Sugar</td>
-          <td class="products-modal__cell">60g</td>
-        </tr>
-        <tr class="products-modal__row">
-          <td class="products-modal__cell">Vanilla sugar</td>
-          <td class="products-modal__cell">15g</td>
-        </tr>
-      </table>
-    </div>
-
-    <form class="products-modal__form">
-      <div class="products-modal__input-field">
-        <input
-          type="text"
-          class="products-modal__form-input"
-          name="form-username"
-          id="form-username"
-          placeholder="Name"
-        />
-      </div>
-
-      <div class="products-modal__input-field">
-        <input
-          type="tel"
-          class="products-modal__form-input"
-          name="form-tel"
-          id="form-tel"
-          placeholder="Phone"
-        />
-      </div>
-
-      <div class="products-modal__input-field-textarea">
-        <textarea
-          class="products-modal__form-textarea"
-          name="form-comment"
-          placeholder="Comment"
-          id="form-comment"
-        ></textarea>
-      </div>
-
-      <button class="products-modal__button-submit button" type="submit">
-        Submit
-      </button>
-    </form>
-  </div>
-
-
-<!-- third modal -->
-
-
   <div class="products-modal modal" data-modal="7">
     <button type="button" class="products-modal__button-close js-modal-close">
       <svg width="18px" height="18px">
@@ -270,6 +140,7 @@ n<!-- first modal -->
     <p class="products-modal__main-title">Ice coffee</p>
 
     <div class="products-modal__image">
+      <div class="products-modal__cover-second-modal"></div>
       <picture>
         <source
           media="(min-width: 320px)"
@@ -285,32 +156,32 @@ n<!-- first modal -->
     <div class="products-modal__calories">
       <ul class="products-modal__list">
         <li class="products-modal__item">
-          <div class="products-modal__block">
-            <div class="products-modal__block-dub">
+          <div class="products-modal__block-second-modal">
+            <div class="products-modal__block-dub-second-modal">
               <p class="products-modal__value-dub">120</p>
             </div>
             <p class="products-modal__value">kcal</p>
           </div>
         </li>
         <li class="products-modal__item">
-          <div class="products-modal__block">
-            <div class="products-modal__block-dub">
+          <div class="products-modal__block-second-modal">
+            <div class="products-modal__block-dub-second-modal">
               <p class="products-modal__value-dub">1g</p>
             </div>
             <p class="products-modal__value">Prote...</p>
           </div>
         </li>
         <li class="products-modal__item">
-          <div class="products-modal__block">
-            <div class="products-modal__block-dub">
+          <div class="products-modal__block-second-modal">
+            <div class="products-modal__block-dub-second-modal">
               <p class="products-modal__value-dub">2,2g</p>
             </div>
             <p class="products-modal__value">Fats</p>
           </div>
         </li>
         <li class="products-modal__item">
-          <div class="products-modal__block">
-            <div class="products-modal__block-dub">
+          <div class="products-modal__block-second-modal">
+            <div class="products-modal__block-dub-second-modal">
               <p class="products-modal__value-dub">10,4g</p>
             </div>
             <p class="products-modal__value">Carbs</p>
@@ -354,7 +225,7 @@ n<!-- first modal -->
       <div class="products-modal__input-field">
         <input
           type="text"
-          class="products-modal__form-input"
+          class="products-modal__form-input-second-modal"
           name="form-username"
           id="form-username"
           placeholder="Name"
@@ -364,7 +235,7 @@ n<!-- first modal -->
       <div class="products-modal__input-field">
         <input
           type="tel"
-          class="products-modal__form-input"
+          class="products-modal__form-input-second-modal"
           name="form-tel"
           id="form-tel"
           placeholder="Phone"
@@ -373,14 +244,127 @@ n<!-- first modal -->
 
       <div class="products-modal__input-field-textarea">
         <textarea
-          class="products-modal__form-textarea"
+          class="products-modal__form-textarea-second-modal"
           name="form-comment"
           placeholder="Comment"
           id="form-comment"
         ></textarea>
       </div>
 
-      <button class="products-modal__button-submit button" type="submit">
+      <button class="products-modal__button-submit " type="submit">
+        Submit
+      </button>
+    </form>
+  </div>
+
+  <!-- third modal -->
+  
+  <div class="products-modal modal" data-modal="6">
+    <button type="button" class="products-modal__button-close js-modal-close">
+      <svg width="18px" height="18px">
+        <use href="./images/sprites.svg#icon-close"></use>
+      </svg>
+    </button>
+  
+    <p class="products-modal__main-title">Chokolate milshake</p>
+  
+    <div class="products-modal__image">
+      <div>
+        <div class="products-modal__cover-third-modal"></div>
+        <picture>
+          <source media="(min-width: 320px)" srcset="
+              ./images/modal/modal-img3@1x.png 1x,
+              ./images/modal/modal-img3@2x.png 2x
+            " />
+          <img src="./images/modal/modal-img3@1x.png" alt="chocolate icecream" />
+        </picture>
+      </div>
+    </div>
+  
+    <div class="products-modal__calories">
+      <ul class="products-modal__list">
+        <li class="products-modal__item">
+          <div class="products-modal__block-third-modal">
+            <div class="products-modal__block-dub-third-modal">
+              <p class="products-modal__value-dub">420</p>
+            </div>
+            <p class="products-modal__value">kcal</p>
+          </div>
+        </li>
+        <li class="products-modal__item">
+          <div class="products-modal__block-third-modal">
+            <div class="products-modal__block-dub-third-modal">
+              <p class="products-modal__value-dub">9g</p>
+            </div>
+            <p class="products-modal__value">Prote...</p>
+          </div>
+        </li>
+        <li class="products-modal__item">
+          <div class="products-modal__block-third-modal">
+            <div class="products-modal__block-dub-third-modal">
+              <p class="products-modal__value-dub">12,2g</p>
+            </div>
+            <p class="products-modal__value">Fats</p>
+          </div>
+        </li>
+        <li class="products-modal__item">
+          <div class="products-modal__block-third-modal">
+            <div class="products-modal__block-dub-third-modal">
+              <p class="products-modal__value-dub">80,4g</p>
+            </div>
+            <p class="products-modal__value">Carbs</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="products-modal__ingredients">
+      <p class="products-modal__title">Ingredients</p>
+  
+      <table class="products-modal__table">
+        <tr class="products-modal__row">
+          <td class="products-modal__cell">Milk</td>
+          <td class="products-modal__cell">400ml</td>
+        </tr>
+        <tr class="products-modal__row">
+          <td class="products-modal__cell">Belgian chocolate</td>
+          <td class="products-modal__cell">60g</td>
+        </tr>
+        <tr class="products-modal__row">
+          <td class="products-modal__cell">Cream</td>
+          <td class="products-modal__cell">150 ml</td>
+        </tr>
+        <tr class="products-modal__row">
+          <td class="products-modal__cell">Cocoa powder</td>
+          <td class="products-modal__cell">60g</td>
+        </tr>
+        <tr class="products-modal__row">
+          <td class="products-modal__cell">Sugar</td>
+          <td class="products-modal__cell">60g</td>
+        </tr>
+        <tr class="products-modal__row">
+          <td class="products-modal__cell">Vanilla sugar</td>
+          <td class="products-modal__cell">15g</td>
+        </tr>
+      </table>
+    </div>
+  
+    <form class="products-modal__form">
+      <div class="products-modal__input-field">
+        <input type="text" class="products-modal__form-input-third-modal" name="form-username" id="form-username"
+          placeholder="Name" />
+      </div>
+  
+      <div class="products-modal__input-field">
+        <input type="tel" class="products-modal__form-input-third-modal" name="form-tel" id="form-tel" placeholder="Phone" />
+      </div>
+  
+      <div class="products-modal__input-field-textarea">
+        <textarea class="products-modal__form-textarea-third-modal" name="form-comment" placeholder="Comment"
+          id="form-comment"></textarea>
+      </div>
+  
+      <button class="products-modal__button-submit" type="submit">
         Submit
       </button>
     </form>
