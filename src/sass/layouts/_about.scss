@@ -151,7 +151,6 @@
   }
 
   @media screen and (max-width: 767px) {
-    max-width: 220px;
     margin: 0 auto;
   }
 
@@ -228,4 +227,5 @@
 
 .about__btn-icon {
   fill: currentColor;
+  stroke: currentColor;
 }
