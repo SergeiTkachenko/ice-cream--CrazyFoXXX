@@ -125,9 +125,6 @@
   .social__link:hover &,
   .social__link:focus & {
     fill: #fcfcfc;
-
-    animation: random-shake 2s;
-    animation-iteration-count: infinite;
   }
 
   .social__link:focus & {
@@ -135,8 +132,6 @@
     height: 100%;
   }
 }
-
-
 
 .footer__action {
   font-weight: 700;

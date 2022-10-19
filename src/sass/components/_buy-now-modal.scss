@@ -21,8 +21,6 @@
     width: 568px;
     padding: 32px 60px;
   }
-
-
 }
 
 .buy-now__btn-close {
@@ -172,38 +170,47 @@
 }
 
 .buy-now__item-cream {
+  cursor: pointer;
   border: 2px solid #aec6a5;
+
+  transition: background-color var(--main-animation);
 
   &:hover {
     background-color: rgb(174, 198, 165, 0.5);
   }
 }
 
-.buy-now__checkbox-input:checked+.buy-now__item-cream {
+.buy-now__checkbox-input:checked + .buy-now__item-cream {
   background-color: #aec6a5;
 }
 
 .buy-now__item-coffee {
+  cursor: pointer;
   border: 2px solid #efd478;
+
+  transition: background-color var(--main-animation);
 
   &:hover {
     background-color: rgba(239, 211, 118, 0.5);
   }
 }
 
-.buy-now__checkbox-input:checked+.buy-now__item-coffee {
+.buy-now__checkbox-input:checked + .buy-now__item-coffee {
   background-color: #efd478;
 }
 
 .buy-now__item-milkshake {
+  cursor: pointer;
   border: 2px solid #d6936d;
+
+  transition: background-color var(--main-animation);
 
   &:hover {
     background-color: rgb(214, 147, 109, 0.5);
   }
 }
 
-.buy-now__checkbox-input:checked+.buy-now__item-milkshake {
+.buy-now__checkbox-input:checked + .buy-now__item-milkshake {
   background-color: #d6936d;
 }
 
