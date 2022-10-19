@@ -214,8 +214,10 @@
   fill: var(--main-light);
   margin: 0;
   height: 30px;
-  &:focus {
-  }
+}
+
+.hero__arrov:hover {
+  animation: random-shake 2s infinite;
 }
 
 .hero__arrov-3 {
