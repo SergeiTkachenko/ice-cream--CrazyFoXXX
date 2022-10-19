@@ -52,7 +52,6 @@ document.addEventListener('DOMContentLoaded', function () {
             подложке и окну чтобы показать их. */
       modalElem.classList.add('active');
       overlay.classList.add('active');
-      document.body.classList.add('modal-open');
     }); // end click
   }); // end foreach
 
@@ -62,7 +61,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
-      document.body.classList.remove('modal-open');
     });
   }); // end foreach
 

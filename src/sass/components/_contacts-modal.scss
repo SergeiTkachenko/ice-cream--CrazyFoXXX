@@ -144,10 +144,16 @@
   transform: translate(-50%, -50%);
 
   width: 280px;
+  height: 100%;
+  overflow: auto;
 
   background-color: var(--main-light);
   border: 2px solid var(--accent-color);
   border-radius: 10px;
+
+  @media screen and(min-width:768px) and(min-height:660px) {
+    height: auto;
+  }
 
   @include medium-min {
     width: 568px;

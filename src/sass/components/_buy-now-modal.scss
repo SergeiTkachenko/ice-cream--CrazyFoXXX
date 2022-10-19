@@ -6,15 +6,23 @@
   transform: translate(-50%, -50%);
 
   width: 280px;
+  height: 100%;
+  overflow: auto;
 
   background-color: var(--main-light);
   border: 2px solid var(--accent-color);
   border-radius: 10px;
 
+  @media screen and(min-width:768px) and(min-height:660px) {
+    height: auto;
+  }
+
   @include medium-min {
     width: 568px;
     padding: 32px 60px;
   }
+
+
 }
 
 .buy-now__btn-close {
@@ -165,34 +173,37 @@
 
 .buy-now__item-cream {
   border: 2px solid #aec6a5;
+
   &:hover {
     background-color: rgb(174, 198, 165, 0.5);
   }
 }
 
-.buy-now__checkbox-input:checked + .buy-now__item-cream {
+.buy-now__checkbox-input:checked+.buy-now__item-cream {
   background-color: #aec6a5;
 }
 
 .buy-now__item-coffee {
   border: 2px solid #efd478;
+
   &:hover {
     background-color: rgba(239, 211, 118, 0.5);
   }
 }
 
-.buy-now__checkbox-input:checked + .buy-now__item-coffee {
+.buy-now__checkbox-input:checked+.buy-now__item-coffee {
   background-color: #efd478;
 }
 
 .buy-now__item-milkshake {
   border: 2px solid #d6936d;
+
   &:hover {
     background-color: rgb(214, 147, 109, 0.5);
   }
 }
 
-.buy-now__checkbox-input:checked + .buy-now__item-milkshake {
+.buy-now__checkbox-input:checked+.buy-now__item-milkshake {
   background-color: #d6936d;
 }
 

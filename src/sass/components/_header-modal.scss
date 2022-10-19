@@ -13,13 +13,10 @@
   z-index: 5;
   transform: translateX(100%);
   transition: transform var(--main-animation);
+  overflow: auto;
 
   &.is-open {
     transform: translateX(0);
-  }
-
-  @media screen and(max-height:520px) {
-    overflow-y: scroll;
   }
 }
 

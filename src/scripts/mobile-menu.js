@@ -25,4 +25,12 @@
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
+
+  // При клике на ссылку навигации в мобильном меню закрываем мобильное меню
+  const closeMobileBtn = document.querySelector('#menu-close');
+  closeMobileBtn.onclick = function () {
+    const menu = document.querySelector('#mobile-menu');
+    menu.classList.remove('is-open');
+    bodyScrollLock.enableBodyScroll(document.body);
+  };
 })();
