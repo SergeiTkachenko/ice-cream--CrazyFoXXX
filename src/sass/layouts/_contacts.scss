@@ -1,6 +1,6 @@
 .contacts {
   background-color: #84a178;
-  height: 1148px;
+  height: 1130px;
   @include medium-min {
     height: 375px;
   }
@@ -34,7 +34,9 @@
   }
 }
 .contacts__item {
-  width: 100%;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 40px 32px;
   background-color: var(--main-light);
   border-radius: 30px;
@@ -80,6 +82,9 @@
   line-height: calc(22 / 12);
   font-weight: 500;
   text-transform: uppercase;
+
+  cursor: default;
+
   @include medium-max {
     margin-left: auto;
     margin-right: auto;

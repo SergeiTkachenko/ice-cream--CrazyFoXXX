@@ -25,14 +25,14 @@
   }
 }
 .advantages__item {
-  width: 100%;
+  max-width: 230px;
   align-items: center;
   text-align: center;
   @include medium-min {
-    width: calc((100% - 160px) / 3);
+    max-width: calc((100% - 160px) / 3);
   }
   @include large-min {
-    width: calc((100% - 64px) / 3);
+    max-width: calc((100% - 64px) / 3);
   }
 }
 .advantages__image {
