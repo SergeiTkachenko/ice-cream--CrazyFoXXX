@@ -135,6 +135,7 @@
   &:hover,
   &:focus {
     animation: small-shake 1s;
+    box-shadow: #13301b 0px 25px 20px -20px;
   }
 
   &__img {
