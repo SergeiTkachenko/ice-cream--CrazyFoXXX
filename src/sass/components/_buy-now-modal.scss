@@ -48,17 +48,6 @@
   }
 }
 
-// .buy-now__btn-icon {
-//   fill: var(--main-dark);
-//   width: 16px;
-//   height: 16px;
-
-//   @include medium-min {
-//     width: 11px;
-//     height: 11px;
-//   }
-// }
-
 .buy-now__title {
   display: block;
   margin: 0 auto;
@@ -78,19 +67,6 @@
     line-height: calc(28 / 20);
   }
 }
-
-// .buy-now__list {
-//   display: flex;
-//   justify-content: center;
-//   margin-top: 100px;
-//   margin-bottom: 40px;
-//   gap: 32px;
-
-//   @include medium-min {
-//     display: flex;
-//     flex-wrap: wrap;
-//   }
-// }
 
 .buy-now__list {
   display: flex;
@@ -249,6 +225,7 @@
   font-weight: 700;
   line-height: 1.2;
   width: 130px;
+  display: block;
 }
 
 .buy-now__input {
