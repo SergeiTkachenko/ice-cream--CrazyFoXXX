@@ -130,12 +130,13 @@
     width: calc((100% - 64px) / 3);
   }
 
-  transition: box-shadow var(--main-animation);
-
   &:hover,
   &:focus {
     animation: small-shake 1s;
-    box-shadow: #13301b 0px 25px 20px -20px;
+
+    .card__wrapper {
+      box-shadow: #3b3f32 0px 20px 30px -10px;
+    }
   }
 
   &__img {
@@ -162,6 +163,8 @@
 
     background-color: var(--card-green);
     border-radius: 24px;
+
+    transition: box-shadow var(--main-animation);
 
     &--yellow {
       background-color: var(--card-yellow);
