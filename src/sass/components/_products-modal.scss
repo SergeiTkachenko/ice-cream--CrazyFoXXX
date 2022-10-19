@@ -152,6 +152,11 @@
   height: 72px;
   border: 2px solid #9cbe8f;
   border-radius: 40px;
+
+  @include medium-min {
+    width: 65px;
+    height: 90px;
+  }
 }
 
 .products-modal__block-second-modal {
@@ -160,6 +165,11 @@
   height: 72px;
   border: 2px solid #efd478;
   border-radius: 40px;
+
+  @include medium-min {
+    width: 65px;
+    height: 90px;
+  }
 }
 
 .products-modal__block-third-modal {
@@ -168,6 +178,11 @@
   height: 72px;
   border: 2px solid #d6936d;
   border-radius: 40px;
+
+  @include medium-min {
+    width: 65px;
+    height: 90px;
+  }
 }
 
 .products-modal__block-dub {
@@ -185,6 +200,12 @@
   position: absolute;
   top: -2;
   left: 3;
+
+  @include medium-min {
+    width: 53px;
+    height: 53px;
+    left: 4;
+  }
 }
 
 .products-modal__block-dub-second-modal {
@@ -202,6 +223,12 @@
   position: absolute;
   top: -2;
   left: 3;
+
+  @include medium-min {
+    width: 53px;
+    height: 53px;
+    left: 4;
+  }
 }
 
 .products-modal__block-dub-third-modal {
@@ -219,6 +246,12 @@
   position: absolute;
   top: -2;
   left: 3;
+
+  @include medium-min {
+    width: 53px;
+    height: 53px;
+    left: 4;
+  }
 }
 
 .products-modal__value {
@@ -229,6 +262,11 @@
   font-size: 10px;
   line-height: 1.2;
   color: var(--main-dark);
+
+  @include medium-min {
+    margin-top: 60px;
+    font-size: 12px;
+  }
 }
 
 .products-modal__value-dub {
@@ -237,6 +275,11 @@
   font-size: 10px;
   line-height: 2.8;
   color: var(--main-dark);
+
+  @include medium-min {
+    font-size: 12px;
+    line-height: 2.3;
+  }
 }
 
 .products-modal__table {
