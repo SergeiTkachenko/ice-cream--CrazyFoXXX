@@ -138,7 +138,9 @@
 
 .about__list {
   @media screen and (max-width: 768px) {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    max-width: 220px;
+    margin: 0 auto;
   }
 
   @media screen and (min-width: 768px) {
