@@ -202,7 +202,7 @@
   @include large-min {
     max-width: 225px;
 
-    margin-bottom: 32px;
+    margin-bottom: 22px;
 
     padding-top: 45px;
     font-size: 14px;
@@ -213,6 +213,25 @@
 .thumb__wrapper .hero__arrov {
   fill: var(--main-light);
   margin: 0;
+  height: 30px;
+}
+
+.hero__arrov:hover {
+  animation: random-shake 2s infinite;
+}
+
+.hero__arrov-3 {
+  color: transparent;
+  fill: currentColor;
+}
+
+.hero__arrov:focus .hero__arrov-3 {
+  fill: white;
+}
+
+.hero__arrov:focus .hero__arrov-1 {
+  color: transparent;
+  fill: currentColor;
 }
 
 .hero__padding {

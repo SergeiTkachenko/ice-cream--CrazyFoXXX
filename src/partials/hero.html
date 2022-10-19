@@ -35,7 +35,7 @@
             ./images/hero/hero-img3_md@1x.png 1x,
             ./images/hero/hero-img3_md@2x.png 2x
           " type="image/png" />
-        <img class="thumb__img-plate img" src="./images/hero/hero-img3_md@1x.png" alt="Picture ice cream in plate"
+        <img class="thumb__img-plate img " src="./images/hero/hero-img3_md@1x.png" alt="Picture ice cream in plate"
           loading="lazy" />
       </picture>
       <div class="thumb__wrapper">
@@ -45,14 +45,15 @@
         </p>
         <a class="card__btn hero__arrov" href="">
           <svg class="" height="20">
-            <use href="./images/sprites.svg#icon-arrov-1"></use>
+            <use class="hero__arrov-1" href="./images/sprites.svg#icon-arrov-1"></use>
+            <use class="hero__arrov-3" href="./images/sprites.svg#icon-arrov-3"></use>
           </svg>
         </a>
       </div>
     </div>
 
     <!-- Block for position absolute img -->
-    <div class="hero__padding">
+    <div class="hero__padding wow animate__heartBeat">
       <picture>
         <!-- Desktop screen -->
         <source media="(min-width:1200px)" srcset="
