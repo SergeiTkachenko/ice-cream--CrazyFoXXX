@@ -1,6 +1,6 @@
 $('.gallery-slider').slick({
   autoplay: true,
-  autoplaySpeed: 5000, // 5 seconds
+  autoplaySpeed: 3000, // 3 seconds
   dots: false,
   infinite: true,
   speed: 300,
