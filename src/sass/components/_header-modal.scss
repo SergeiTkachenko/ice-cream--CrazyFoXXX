@@ -47,6 +47,10 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  @include medium-min {
+    gap: 40px;
+  }
 }
 
 .menu-nav__link {

@@ -6,6 +6,8 @@
   transform: translate(-50%, -50%);
 
   width: 280px;
+  max-height: 100%;
+  overflow: auto;
 
 
   background-color: var(--main-light);

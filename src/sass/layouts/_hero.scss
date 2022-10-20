@@ -1,18 +1,19 @@
 // - 767 . Mobile screen
-@include medium-max {
-}
+@include medium-max {}
+
 // 768 <-> 1199 . Tablet screen
-@include medium-only {
-}
+@include medium-only {}
+
 // 1200 + . Desktop screen
-@include large-min {
-}
+@include large-min {}
 
 .hero {
   padding-top: 55px;
+
   @include medium-only {
     padding-top: 24px;
   }
+
   @include large-min {
     padding-top: 44px;
   }
@@ -40,6 +41,7 @@
   text-transform: uppercase;
 
   color: var(--main-light);
+
   @include medium-only {
     max-width: 181px;
 
@@ -50,6 +52,7 @@
     line-height: calc(23 / 18);
     text-transform: uppercase;
   }
+
   @include large-min {
     max-width: 367px;
 
@@ -64,11 +67,13 @@
   font-size: 34px;
   line-height: calc(33 / 34);
   text-transform: uppercase;
+
   @include medium-only {
     font-size: 24px;
     line-height: calc(13 / 24);
     text-transform: uppercase;
   }
+
   @include large-min {
     font-size: 38px;
     line-height: calc(48 / 38);
@@ -87,6 +92,7 @@
   text-transform: uppercase;
 
   color: var(--main-dark);
+
   @include large-min {
     font-size: 46px;
     line-height: calc(56 / 46);
@@ -99,6 +105,7 @@
   text-align: right;
 
   color: var(--main-light);
+
   @include large-min {
     font-size: 14px;
     line-height: calc(17 / 14);
@@ -108,6 +115,7 @@
 
 .distribution__item:first-child {
   margin-bottom: 20px;
+
   @include large-min {
     margin-bottom: 18px;
   }
@@ -117,12 +125,15 @@
 .hero__group-buttons {
   display: flex;
   gap: 8px;
+
   @include medium-max {
     margin-bottom: 0px;
   }
+
   @include medium-only {
     margin-bottom: 28px;
   }
+
   @include large-min {
     margin-bottom: 28px;
     gap: 12px;
@@ -137,6 +148,7 @@
   font-weight: 600;
   font-size: 8px;
   line-height: calc(10 / 8);
+
   @include large-min {
     width: 134px;
     height: 42px;
@@ -157,6 +169,7 @@
 
   background-color: transparent;
   color: var(--default-btn);
+
   @include large-min {
     width: 154px;
     height: 40px;
@@ -177,6 +190,7 @@
 .hero__thumb {
   display: flex;
   align-items: center;
+
   @include large-min {
     display: flex;
     align-items: center;
@@ -187,6 +201,7 @@
   position: relative;
 
   margin-right: 33px;
+
   @include large-min {
     margin-right: 14px;
   }
@@ -199,6 +214,7 @@
 
   font-size: 12px;
   line-height: calc(17 / 12);
+
   @include large-min {
     max-width: 225px;
 
@@ -236,9 +252,11 @@
 
 .hero__padding {
   height: 239px;
+
   @include medium-only {
     height: 13px;
   }
+
   @include large-min {
     height: 65px;
   }
@@ -251,20 +269,20 @@
   left: 0;
   bottom: 0;
 
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0) 30%,
-    rgba(252, 252, 252, 0.5) 20%,
-    rgba(255, 255, 255, 0) 65%
-  );
+  background: radial-gradient(circle,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(252, 252, 252, 0.5) 20%,
+      rgba(255, 255, 255, 0) 65%);
 
   @include medium-max {
     left: 52%;
     transform: translate(-50%, 0);
   }
+
   @include medium-only {
     left: 416px;
   }
+
   @include large-min {
     left: 633px;
   }
@@ -277,13 +295,16 @@
 
   bottom: 0;
   left: 0;
+
   @include medium-max {
     left: 50%;
     transform: translate(-50%, 0);
   }
+
   @include medium-only {
     left: 0;
   }
+
   @include large-min {
     left: 0;
   }
@@ -291,6 +312,7 @@
 
 // Mobile screen. - 767px
 @include medium-max {
+
   // Addition blocks for tablet and desktop
   .hero__distribution {
     display: none;
