@@ -155,11 +155,12 @@
   border-bottom: 1px solid #e1e1e1;
 
   @include medium-min {
-    margin: 26px 0;
+    margin: 32px 0;
     padding: 32px 0;
   }
   @include large-min {
     margin: 32px 0;
+    padding: 32px 0;
   }
 }
 .contacts__schedule-item {
