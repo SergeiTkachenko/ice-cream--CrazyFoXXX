@@ -1,7 +1,7 @@
 $('.gallery-slider').slick({
   autoplay: true,
   autoplaySpeed: 5000, // 5 seconds
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 300,
   slidesToShow: 1,
