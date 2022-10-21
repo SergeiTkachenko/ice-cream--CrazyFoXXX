@@ -15,10 +15,19 @@ body {
 .to-top {
   position: fixed;
   bottom: 40px;
-  right: 20px;
+  right: 100px;
   z-index: 5;
-}
+  opacity: 0.5;
 
+  transition: opacity var(--main-animation), transform var(--main-animation);
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+
+    transform: translateY(-4px);
+  }
+}
 
 .backdrop {
   position: fixed;
@@ -28,8 +37,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 
-
-  transition: opacity var(--main-anim), visibility var(--main-anim);
+  transition: opacity var(--main-animation), visibility var(--main-animation);
 }
 
 .is-hidden {
