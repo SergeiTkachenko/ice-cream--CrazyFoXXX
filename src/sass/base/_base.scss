@@ -14,18 +14,28 @@ body {
 //кнопка скролла  вверх
 .to-top {
   position: fixed;
-  bottom: 40px;
-  right: 100px;
+  bottom: 10px;
+  right: 10px;
   z-index: 5;
   opacity: 0.5;
 
   transition: opacity var(--main-animation), transform var(--main-animation);
 
-  &:hover,
-  &:focus {
-    opacity: 1;
+  @include medium-min {
+    bottom: 40px;
+    right: 40px;
+  }
 
-    transform: translateY(-4px);
+  @include large-min {
+    bottom: 40px;
+    right: 100px;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+
+      transform: translateY(-4px);
+    }
   }
 }
 
