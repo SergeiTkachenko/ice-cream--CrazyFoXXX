@@ -27,10 +27,12 @@
   });
 
   // При клике на ссылку навигации в мобильном меню закрываем мобильное меню
-  const closeMobileBtn = document.querySelector('#menu-close');
-  closeMobileBtn.onclick = function () {
-    const menu = document.querySelector('#mobile-menu');
-    menu.classList.remove('is-open');
-    bodyScrollLock.enableBodyScroll(document.body);
-  };
+  const closeMobileBtn = document.querySelectorAll('#menu-close');
+  closeMobileBtn.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      const menu = document.querySelector('#mobile-menu');
+      menu.classList.remove('is-open');
+      bodyScrollLock.enableBodyScroll(document.body);
+    });
+  });
 })();

@@ -1,4 +1,4 @@
-$('.scrollto a').on('click', function () {
+$('a[href^="#"').on('click', function () {
   let href = $(this).attr('href');
 
   $('html, body').animate(
@@ -10,6 +10,5 @@ $('.scrollto a').on('click', function () {
       easing: 'linear', // по умолчанию «swing»
     }
   );
-
   return false;
 });

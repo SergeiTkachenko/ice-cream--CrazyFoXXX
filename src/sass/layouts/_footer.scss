@@ -5,11 +5,6 @@
   @include medium-min {
     padding-bottom: 15px;
   }
-}
-
-.footer__container {
-  flex-wrap: wrap;
-  @include flex-center;
 
   &::after {
     content: '';
@@ -23,11 +18,12 @@
     @include medium-min {
       bottom: 50px;
     }
-
-    @include large-min {
-      max-width: 1168px;
-    }
   }
+}
+
+.footer__container {
+  flex-wrap: wrap;
+  @include flex-center;
 
   @media screen and(max-width:480px) {
     padding-left: 20px;
