@@ -27,7 +27,7 @@
   });
 
   // При клике на ссылку навигации в мобильном меню закрываем мобильное меню
-  const closeMobileBtn = document.querySelectorAll('#menu-close');
+  const closeMobileBtn = document.querySelectorAll('.menu-nav__link');
   closeMobileBtn.forEach(function (item) {
     item.addEventListener('click', function (e) {
       const menu = document.querySelector('#mobile-menu');
